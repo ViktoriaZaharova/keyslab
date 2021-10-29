@@ -1,0 +1,66 @@
+@import "fonts"
+@import "vars"
+
+.news-card
+  width: 100%
+  padding: 30px 0
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  border-bottom: 1px solid #DEDEDE
+  position: relative
+  cursor: pointer
+  transition: .3s ease
+  .btn-next-links
+    position: absolute
+    right: 0
+    top: 0
+  &__img
+    width: 475px
+    height: 266px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    filter: grayscale(100%)
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: calc(100% - 475px)
+    padding: 0 0 0 31px
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__footer
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: auto 0 0 0
+    font-size: 12px
+  &__title
+    max-width: 475px
+    width: 100%
+    font-size: 28px
+    font-weight: 600
+    text-decoration: underline
+    color: $black
+  &:hover
+    .news-card__img
+      filter: none
+    .news-card__title
+      color: $accent
+    .btn-next-links
+      background: url("../img/next-hover.svg") no-repeat center
+        size: cover
+
+
+.news-date
+  margin: 0 0 0 16px
+
+.news-category
+  text-transform: uppercase
+  padding: 8px 12px
+  color: #CD5237

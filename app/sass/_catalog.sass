@@ -1,0 +1,137 @@
+@import "fonts"
+@import "vars"
+
+.product-card
+  width: 100%
+  position: relative
+  cursor: pointer
+  transition: .3s ease
+  &__info
+    width: 100%
+    position: absolute
+    left: 0
+    top: 0
+    padding: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    font-size: 12px
+  &__img
+    width: 100%
+    background: #FAFAFA
+    height: 380px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__body
+    width: 100%
+    padding: 12px 0 0
+  &__title
+    width: 100%
+    color: $black
+    font-size: 15px
+    &:hover
+      color: $accent
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &:hover
+    .product-card__img
+      background: #CD5237
+    .article, .rating
+      color: #fff
+    .rating-icon
+      fill: #fff
+
+
+
+
+.article
+  color: $input
+  text-transform: uppercase
+
+.rating
+  display: flex
+  align-items: center
+  color: $accent
+
+.rating-icon
+  width: 12px
+  height: 12px
+  fill: $accent
+  margin: 0 6px 0 0
+
+.price-wrapper
+  width: 100%
+  margin: 4px 0 0
+
+.price
+  color: #202020
+  font-size: 15px
+  font-weight: bold
+  text-transform: uppercase
+
+.product-card-horizontal
+  background: #FAFAFA
+  padding: 36px 40px 36px 24px
+  display: flex
+  align-items: center
+  min-height: 339px
+  .product-card__img
+    width: 267px
+    height: 267px
+    display: flex
+    align-items: center
+    justify-content: center
+  .product-card__body
+    width: calc(100% - 267px)
+    padding: 0 0 0 16px
+  .product-card__info
+    position: relative
+    padding: 0
+    margin: 0 0 12px
+    justify-content: flex-start
+  .rating
+    margin: 0 0 0 16px
+  .product-card__title
+    font-size: 20px
+    max-width: 250px
+  .price-wrapper
+    margin: 12px 0 24px
+  &:hover
+    background: $accent
+    color: #fff
+    .productions-company__img
+      position: relative
+      background: transparent
+    .product-card__title, .price, .links-accent
+      color: #fff
+    .amount
+      margin: 0 24px 0 0
+      display: flex
+      .up, .down
+        stroke: #fff
+      input
+        color: #fff
+
+.amount
+  display: none
+  align-items: center
+  justify-content: center
+  input
+    background: transparent
+    text-align: center
+    width: 44px
+    height: 20px
+    border: none
+    padding: 0
+    font-size: 12px
+
+  .up, .down
+    width: 20px
+    height: 20px
+    padding: 4px
+    cursor: pointer

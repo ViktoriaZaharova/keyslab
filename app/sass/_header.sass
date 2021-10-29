@@ -1,0 +1,128 @@
+@import "fonts"
+@import "vars"
+
+//header
+header
+  margin: 0 0 30px
+  .container
+    align-items: center
+
+.header-top
+  background: $grey-light
+  padding: 16px 0
+  font-size: 12px
+
+.list-message
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 auto
+  font-size: 12px
+  li
+    display: flex
+    align-items: center
+    &:after
+      content: '//'
+      display: inline-block
+      margin: 0 10px
+    &:last-child
+      &:after
+        display: none
+    a
+      color: $black
+      display: flex
+      align-items: center
+      &:hover
+        color: $accent
+
+.phone
+  color: $black
+  &:hover
+    color: $accent
+
+.list-message__icon-telegram
+  width: 14px
+  height: 12px
+  fill: $input
+  margin: 0 8px 0 0
+
+.header-center
+  padding: 20px 0
+  .container
+    justify-content: space-between
+
+.logo
+  text-transform: uppercase
+  color: #202020
+  font-size: 14px
+  font-weight: bold
+  &:hover
+    color: #202020
+
+.btn-menu
+  display: flex
+  align-items: center
+  font-size: 14px
+  color: $black
+  stroke: $black
+  text-transform: uppercase
+  &__icon
+    margin: 0 10px 0 0
+    width: 32px
+    height: 32px
+  &:hover
+    color: $black
+
+.btn-cabinet, .btn-search
+  fill: none
+  stroke: $black
+
+.header-nav
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    border:
+      right: 1px solid #DEDEDE
+    &:last-child
+      border: none
+      .header-nav__links
+        padding-right: 0
+
+.header-nav__links
+  display: flex
+  align-items: center
+  padding: 0 16px
+  color: $black
+  font-size: 14px
+
+.header-nav__links-icon
+  width: 24px
+  height: 24px
+  padding: 4px
+
+.btn-basket__val
+  margin: 0 0 0 4px
+
+.header-bottom
+  padding: 24px 0
+  border:
+    top: 1px solid #DEDEDE
+    bottom: 1px solid #DEDEDE
+
+.products-category
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  text-transform: uppercase
+  font-size: 12px
+  li
+    margin: 0 40px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: $black
+      &:hover
+        color: $accent
+
