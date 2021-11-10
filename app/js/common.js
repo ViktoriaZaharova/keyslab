@@ -5,7 +5,7 @@ $(document).ready(function () {
         fade: true,
         dots: true,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         dotsClass: 'dots-slick-my',
         appendDots: '.home-slider-footer',
@@ -28,11 +28,26 @@ $(document).ready(function () {
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         appendArrows: '.products-day-slider-nav',
         prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
+        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+        responsive: [
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+            }
+        ]
     });
 
     let productSlider = $('.products-day-slider');

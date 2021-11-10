@@ -183,6 +183,19 @@ button, .btn
       width: 0
       visibility: hidden
 
+.btn-border-white
+  color: #fff
+  font-size: 12px
+  font-weight: bold
+  text-transform: uppercase
+  border: 1px solid #FFFFFF
+  padding: 0 43px
+  height: 39px
+  &:hover
+    background: $accent
+    color: #fff
+    border-color: $accent
+
 .btn-next-links
   width: 32px
   height: 32px
@@ -192,15 +205,14 @@ button, .btn
     background: url("../img/next-hover.svg") no-repeat center
       size: 100%
 
-
 .container
-  max-width: 1350px
+  max-width: 1352px
   width: 100%
   margin: 0 auto
   position: relative
   display: flex
   flex-wrap: wrap
-  padding: 0 15px
+  padding: 0 16px
 
 .container-my
   padding: 0 30px
@@ -215,11 +227,17 @@ button, .btn
 .p-16
   padding: 0 16px
 
+.p-40
+  padding: 40px 0
+
 .p-120
   padding: 120px 0
 
 .mb-30
   margin-bottom: 30px
+
+.mb-40
+  margin-bottom: 40px
 
 .mb-50
   margin-bottom: 50px
@@ -248,6 +266,14 @@ button, .btn
   &:hover
     color: $black
 
+.links-grey
+  color: rgba(#999, .6)
+  &:hover
+    color: $accent
+
+.text-decration
+  text-decoration: underline
+
 .d-inline
   display: inline-block
 
@@ -255,6 +281,7 @@ button, .btn
   display: flex
   align-items: stretch
   flex-wrap: wrap
+  margin: 0 -16px
 
 .svg-icon
   display: inline-block
@@ -324,7 +351,8 @@ h3
     cursor: pointer
     transition: .3s ease
     position: relative
-
+    &:last-child
+      margin: 0
     &:before
       content: ''
       position: absolute
@@ -368,7 +396,7 @@ h3
   justify-content: center
   width: 36px
   height: 36px
-  background: #FAFAFA
+  background: transparent
   border: 1px solid #CD5237
     radius: 50%
   padding: 13px
@@ -420,7 +448,7 @@ h3
   flex-wrap: wrap
   left: 0
   bottom: 0
-  padding: 0 60px 60px 110px
+  padding: 0 90px 60px 140px
 
 .home-slider-title
   font-size: 50px
@@ -551,7 +579,6 @@ h3
   display: flex
   align-items: center
 
-
 .progress
   width: calc(100% - 120px - 50px)
   height: 2px
@@ -569,7 +596,47 @@ h3
     left: 0
     transition: .4s ease-in-out
 
+//top-orders
+.top-orders
+  margin: 120px 0 -40px
 
+//subscribe
+.subscribe
+  margin: 120px 0 0
+  h3
+    margin: 0 auto 24px
+    max-width: 644px
+    width: 100%
+  .container
+    flex-direction: column
+    align-items: flex-start
+
+.form-subscribe
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  max-width: 644px
+  width: 100%
+  position: relative
+  margin: 0 auto
+  input
+    height: 60px
+    padding: 0 92px 0 20px
+  button
+    position: absolute
+    right: 0
+    top: 0
+
+
+.btn-submit
+  width: 60px
+  height: 60px
+  stroke: #fff
+  padding: 0
+  .svg-icon
+    width: 10px
+    height: 10px
 
 
 
