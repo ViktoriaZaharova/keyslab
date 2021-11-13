@@ -76,6 +76,9 @@ body
 html, body
   overflow-x: hidden
 
+.no-scroll
+  overflow-y: hidden
+
 img
   display: block
   max-width: 100%
@@ -257,6 +260,10 @@ button, .btn
 .color-accent
   color: $accent
 
+.color-green
+  color: #477916
+
+
 .links-accent
   color: $accent
   text-transform: uppercase
@@ -266,12 +273,17 @@ button, .btn
   &:hover
     color: $black
 
+.links-black
+  color: #202020
+  &:hover
+    color: $accent
+
 .links-grey
   color: rgba(#999, .6)
   &:hover
     color: $accent
 
-.text-decration
+.text-decoration
   text-decoration: underline
 
 .d-inline
@@ -643,6 +655,8 @@ h3
 @import "header"
 @import "catalog"
 @import "news"
+@import "modal"
+@import "sales"
 @import "footer"
 @import "media"
 // Всегда в конце

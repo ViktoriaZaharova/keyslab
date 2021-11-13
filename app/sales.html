@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>KeysLab</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="container container-my">
+      <div class="certification-partner">
+        Cертифицированный партнер <a href="#" class="links d-inline color-default"><span class="color-red">Я</span>ндекс.Маркет</a>
+      </div>
+      <ul class="list-message">
+        <li><a href="tel:+73432264625" class="phone">8 343 226 46 25</a></li>
+        <li>
+          <a href="#" class="list-message__links">
+            <span class="list-message__icon list-message__icon-telegram icon-wrap"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#telegram"></use></svg></span>
+            <span class="list-message__text">Написать в Telegram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header-center">
+    <div class="container container-my">
+      <a href="#menu__modal" class="btn-menu open_modal">
+        <span class="btn-menu__icon icon-wrap"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#burger"></use></svg></span>
+        <span class="btn-menu__text">Меню</span>
+      </a>
+
+      <a href="index.html" class="logo">KeysLab</a>
+
+      <ul class="header-nav">
+        <li>
+          <a href="#" class="header-nav__links btn-search">
+            <span class="header-nav__links-icon icon-wrap"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#search"></use></svg></span>
+          </a>
+        </li>
+        <li>
+          <a href="login__modal" class="header-nav__links btn-cabinet open_modal">
+            <span class="header-nav__links-icon icon-wrap"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#user"></use></svg></span>
+          </a>
+        </li>
+        <li>
+          <a href="#basket__modal" class="header-nav__links btn-basket open_modal">
+            <span class="header-nav__links-icon icon-wrap"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#basket"></use></svg></span>
+            <span class="btn-basket__val">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container container-my">
+      <ul class="products-category">
+        <li><a href="#">WINDOWS</a></li>
+        <li><a href="#">microsoft office</a></li>
+        <li><a href="#">Антивирусы</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section class="sales page">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Главная </a></li>
+      <li><span>Cкидки</span></li>
+    </ul>
+
+    <h1>Скидки</h1>
+  </div>
+</section>
+
+
+
+<section class="subscribe bg-grey p-40">
+  <div class="container">
+    <div class="w-100">
+      <h3>Подпишитесь на обновления <br> и получите скидку 15%</h3>
+    </div>
+    <form method="post" class="form form-subscribe">
+      <label><input type="text" placeholder="Ваш e-mail" name="mail" required></label>
+      <button type="submit" class="btn btn-accent btn-submit"><span class="icon-wrap"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#btn-arrow-right"></use></svg></span></button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-box">
+        <h4>Продукция</h4>
+        <ul class="footer-menu">
+          <li><a href="about-microsoft.html">OS Microsoft</a></li>
+          <li><a href="about-office.html">MS Office</a></li>
+          <li><a href="microsoft-software.html">ПО Microsoft</a></li>
+          <li><a href="antivirus.html">Антивирусы</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h4>Компания</h4>
+        <ul class="footer-menu">
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="sales.html">Скидки</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h4>Контакты</h4>
+        <div class="contacts-box">
+          <a href="tel:+73432264625" class="phone">8 343 226 46 25</a>
+          <a href="mailto:support@digi-keys.ru" class="mail">support@digi-keys.ru</a>
+        </div>
+
+        <a href="#callback__modal" class="btn btn-border-white open_modal">Написать</a>
+      </div>
+
+      <div class="footer-box">
+        <a href="#" class="logo">Keyslab</a>
+        <ul class="list-payment">
+          <li>+4</li>
+          <li><img src="img/pay1.svg" alt=""></li>
+          <li><img src="img/pay2.svg" alt=""></li>
+          <li><img src="img/pay3.svg" alt=""></li>
+          <li><img src="img/pay4.svg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <a href="#" target="_blank" class="links-grey">Политика конфеденциальности</a>
+      <div class="copyright">©2019—2021 digi-keys, Все права защищены.</div>
+      <div class="developer-box">
+        <p>Cделано:</p>
+        <a href="#" target="_blank" class="links-grey text-decoration">Ds</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<!--modals-->
+<div class="modal__div" id="basket__modal">
+  <div class="modal__wrapper">
+    <div class="scroll-horizontal">
+      <div class="modal-head">
+        <h3 class="modal-title">Корзина (6)</h3>
+        <div class="modal__close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-basket">
+          <div class="basket-card">
+            <a href="#" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+            <div class="basket-card__body">
+              <div class="basket-card__item">
+                <a href="#" class="basket-card__title">Microsoft Windows 10 Professional x32/x64</a>
+                <a href="#" class="links-accent links-delete text-decoration">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                  <span class="links-accent__text">Удалить</span>
+                </a>
+              </div>
+
+              <div class="basket-card__item">
+
+                <div class="price-wrapper">
+                  <div class="price">1 200 ₽</div>
+                </div>
+                <div class="amount">
+                <span class="down icon-wrap"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#minus"></use></svg></span>
+                  <input type="text" value="1"/>
+                  <span class="up icon-wrap"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#plus"></use></svg></span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="basket-card">
+            <a href="#" class="basket-card__img"><img src="img/product2.png" alt=""></a>
+            <div class="basket-card__body">
+              <div class="basket-card__item">
+                <a href="#" class="basket-card__title">Microsoft Office 2019 Professional Plus</a>
+
+                <a href="#" class="links-accent links-delete text-decoration">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                  <span class="links-accent__text">Удалить</span>
+                </a>
+              </div>
+
+              <div class="basket-card__item">
+                <div class="price-wrapper">
+                  <div class="price">990 ₽</div>
+                </div>
+                <div class="amount">
+                <span class="down icon-wrap"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#minus"></use></svg></span>
+                  <input type="text" value="1"/>
+                  <span class="up icon-wrap"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#plus"></use></svg></span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="basket-card">
+            <a href="#" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+            <div class="basket-card__body">
+              <div class="basket-card__item">
+                <a href="#" class="basket-card__title">Microsoft Windows 10 Professional x32/x64</a>
+
+                <a href="#" class="links-accent links-delete text-decoration">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                  <span class="links-accent__text">Удалить</span>
+                </a>
+              </div>
+
+              <div class="basket-card__item">
+                <div class="price-wrapper">
+                  <div class="price">1 200 ₽</div>
+                </div>
+                <div class="amount">
+                <span class="down icon-wrap"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#minus"></use></svg></span>
+                  <input type="text" value="1"/>
+                  <span class="up icon-wrap"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#plus"></use></svg></span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="basket-card">
+            <a href="#" class="basket-card__img"><img src="img/product2.png" alt=""></a>
+            <div class="basket-card__body">
+              <div class="basket-card__item">
+                <a href="#" class="basket-card__title">Microsoft Office 2019 Professional Plus</a>
+                <a href="#" class="links-accent links-delete text-decoration">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                  <span class="links-accent__text">Удалить</span>
+                </a>
+              </div>
+
+              <div class="basket-card__item">
+
+                <div class="price-wrapper">
+                  <div class="price">990 ₽</div>
+                </div>
+                <div class="amount">
+                <span class="down icon-wrap"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#minus"></use></svg></span>
+                  <input type="text" value="1"/>
+                  <span class="up icon-wrap"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#plus"></use></svg></span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <label class="promo-code">
+            <input type="text" placeholder="Есть промокод?" name="code_promo">
+          </label>
+
+          <div class="total-basket">
+            <p>Итого:</p>
+            <div class="total-sum">2 190 ₽</div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-accent" type="submit"><span>Оформить заказ</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

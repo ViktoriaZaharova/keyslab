@@ -1,0 +1,33 @@
+@import "fonts"
+@import "vars"
+
+
+.breadcrumb
+  margin: 0 0 40px
+  display: flex
+  align-content: center
+  flex-wrap: wrap
+  font-size: 10px
+  color: #202020
+  li
+    a
+      color: #666666
+      display: flex
+      align-items: center
+      &:after
+        content: ''
+        display: inline-block
+        margin: 0 13px
+        width: 2px
+        height: 4px
+        background: url("../img/arrow-right.svg") no-repeat center
+          size: 100%
+
+.page
+  h1
+    margin: 0 0 50px
+
+
+.sales
+  h1
+    margin: 0 0 80px
