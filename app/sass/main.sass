@@ -300,6 +300,9 @@ button, .btn
   width: 100%
   height: 100%
 
+.fill-none
+  fill: none
+
 .icon-wrap
   display: flex
   align-items: center
@@ -434,6 +437,34 @@ h3
   .slick-next
     order: 1
 
+
+.wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.sidebar
+  max-width: 338px
+  width: 100%
+  padding: 0 16px 0 0
+
+.wrapper-content
+  width: calc(100% - 338px)
+  padding: 0 0 0 16px
+
+.subtitle-page
+  color: #666666
+  font-size: 12px
+  text-transform: uppercase
+
+.box-text
+  font-size: 15px
+  line-height: 150%
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
 
 //home
 .home-slider
@@ -652,11 +683,13 @@ h3
 
 
 
+
 @import "header"
 @import "catalog"
 @import "news"
 @import "modal"
 @import "sales"
+@import "politics"
 @import "footer"
 @import "media"
 // Всегда в конце

@@ -23,7 +23,6 @@ $(document).ready(function () {
     });
 
 
-
     $('.products-day-slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -87,7 +86,7 @@ $('.down').on("click", function () {
     $input.change();
     return false;
 });
-$('.up').on("click",function () {
+$('.up').on("click", function () {
     let $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
@@ -102,7 +101,7 @@ $(function () {
         close = $('.modal__close, .overlay'),
         modal = $('.modal__div');
 
-    open_modal.on('click',function (event) {
+    open_modal.on('click', function (event) {
         event.preventDefault();
 
         modal.css('display', 'none').animate({
@@ -144,3 +143,31 @@ $(function () {
 // phone mask
 $('[name="phone"]').mask('+7(999) 999-99-99');
 
+// input search
+$(function () {
+    $('.form-search input').on('keyup change', function () {
+        if (this.value.length > 0) {
+            $('.result-search-modal').fadeIn();
+        } else {
+            $('.result-search-modal').fadeOut();
+        }
+    });
+});
+
+
+//плавный скролл
+$(document).ready(function () {
+    $('.go_to').click(function (e) {
+        e.preventDefault();
+        $('.go_to').removeClass('active');
+        $(this).addClass('active');
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length !== 0) {
+            $('html, body').animate({
+                scrollTop: $(scroll_el).offset().top
+            }, 500);
+        }
+        return false;
+    });
+});
+//плавный скролл end

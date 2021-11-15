@@ -63,7 +63,7 @@
 
       <ul class="header-nav">
         <li>
-          <a href="#" class="header-nav__links btn-search">
+          <a href="#search__modal" class="header-nav__links btn-search open_modal">
             <span class="header-nav__links-icon icon-wrap"><svg class="svg-icon"><use
                 xlink:href="img/sprite.svg#search"></use></svg></span>
           </a>
@@ -838,7 +838,8 @@
             <a href="#order__modal2" class="basket-card__img open_modal"><img src="img/product2.png" alt=""></a>
             <div class="basket-card__body">
               <div class="basket-card__item">
-                <a href="#order__modal2" class="basket-card__title open_modal">Microsoft Office 2019 Professional Plus</a>
+                <a href="#order__modal2" class="basket-card__title open_modal">Microsoft Office 2019 Professional
+                  Plus</a>
 
                 <a href="#" class="links-accent links-delete text-decoration">
                   <svg class="svg-icon">
@@ -1017,6 +1018,7 @@
 
   </div>
 </div>
+
 <div class="modal__div" id="order__modal2">
   <div class="modal__wrapper">
     <div class="scroll-horizontal">
@@ -1321,6 +1323,138 @@
       </div>
     </div>
 
+  </div>
+</div>
+
+<div class="modal__div modal__div-search" id="search__modal">
+  <div class="modal__wrapper">
+    <div class="scroll-horizontal">
+      <div class="modal-head">
+        <div class="modal__close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-search">
+          <label>
+            <span class="input-icon fill-none icon-wrap"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#search"></use></svg></span>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button class="btn btn-search-arrow" type="submit">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#btn-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-example">
+          <h4>Пример товаров</h4>
+
+          <a href="#" class="search-example__links">Все товары</a>
+          <a href="#" class="search-example__links">Антивирусы</a>
+          <a href="#" class="search-example__links">MS Office</a>
+          <a href="#" class="search-example__links">Windows</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-search" id="search__modal2">
+  <div class="modal__wrapper">
+    <div class="scroll-horizontal">
+      <div class="modal-head">
+        <div class="modal__close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-search">
+          <label>
+            <span class="input-icon fill-none icon-wrap"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#search"></use></svg></span>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button class="btn btn-search-arrow" type="submit">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#btn-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-example">
+          <div class="result-search-modal">
+            <div class="basket-card">
+              <a href="#" class="basket-card__img"><img src="img/product4.png" alt=""></a>
+              <div class="basket-card__body">
+                <div class="basket-card__item">
+                  <a href="#" class="basket-card__title">Microsoft Windows 10 Professional x32/x64</a>
+                  <div class="price-wrapper">
+                    <div class="price">1 200 ₽</div>
+                  </div>
+                </div>
+
+                <div class="basket-card__item">
+                  <a href="#" class="btn btn-add btn-accent fill-none">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="basket-card">
+              <a href="#" class="basket-card__img"><img src="img/product4.png" alt=""></a>
+              <div class="basket-card__body">
+                <div class="basket-card__item">
+                  <a href="#" class="basket-card__title">Microsoft Windows 10 Professional x32/x64</a>
+                  <div class="price-wrapper">
+                    <div class="price">1 200 ₽</div>
+                  </div>
+                </div>
+
+                <div class="basket-card__item">
+
+                  <a href="#" class="btn btn-add btn-accent fill-none">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="basket-card">
+              <a href="#" class="basket-card__img"><img src="img/product4.png" alt=""></a>
+              <div class="basket-card__body">
+                <div class="basket-card__item">
+                  <a href="#" class="basket-card__title">Microsoft Windows 10 Professional x32/x64</a>
+                  <div class="price-wrapper">
+                    <div class="price">1 200 ₽</div>
+                  </div>
+                </div>
+
+                <div class="basket-card__item">
+                  <a href="#" class="btn btn-add btn-accent fill-none">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-add btn-add-toggle btn-accent fill-none">+8</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

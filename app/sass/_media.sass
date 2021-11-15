@@ -22,6 +22,20 @@
     &__title
       font-size: 22px
 
+  .sidebar
+    max-width: 250px
+
+  .wrapper-content
+    width: calc(100% - 250px)
+
+  .sales-content
+    margin: 0 0 40px
+
+  .sales-box__percent
+    font-size: 60px
+    line-height: 60px
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   .subscribe
@@ -75,6 +89,45 @@
 
   .sub-menu
     padding: 0 30px
+
+  .sidebar
+    max-width: none
+    padding: 0
+    margin: 0 0 20px
+
+  .wrapper-content
+    width: 100%
+    padding: 0
+
+  .sales-content
+    max-width: none
+    h3
+      margin: 0 0 16px
+      font-size: 18px
+
+  .box-text
+    font-size: 14px
+
+  .breadcrumb
+    margin: 24px 0 16px
+
+  .sales
+    h1
+      margin: 0 0 40px
+
+  .sales-box
+    margin: 0 0 16px
+
+  .mb-80
+    margin-bottom: 40px
+
+  h1
+    font-size: 26px
+
+  .politics
+    .sidebar
+      display: none
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 860px)
@@ -200,6 +253,28 @@
 
   .list-message
     margin: 0
+
+  .search-example .basket-card__title
+    max-width: 220px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+  .btn-add-toggle
+    margin: 32px auto 0
+
+  .sales-box
+    padding: 20px
+    &__title
+      font-size: 18px
+      margin: 0 0 8px
+    &__footer
+      margin: 0
+      flex-direction: column
+      align-items: flex-start
+      height: 100%
+    &__price
+      font-size: 15px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
@@ -472,7 +547,48 @@
     .basket-card__item
       flex-direction: column
       align-items: flex-start
-      
+
+  .modal__div-search
+    .modal__wrapper
+      padding: 24px 16px
+    .modal__close
+      width: 60px
+      height: 60px
+      padding: 15px
+
+  .form-search
+    margin: 0 0 32px
+    input
+      padding: 7px 40px 19px
+      height: 52px
+      font-size: 20px
+
+  .search-example
+    font-size: 14px
+    &__links
+      font-size: 14px
+    .basket-card__img
+      display: none
+    .basket-card__body
+      padding: 0
+      width: 100%
+    .btn-add
+      width: 36px
+      height: 36px
+    .basket-card__title
+      font-size: 12px
+    .price
+      font-size: 14px
+
+  .sales-box
+    width: 100%
+
+  h1
+    font-size: 22px
+
+  .politics-box h3
+    margin: 0 0 24px
+
 @media only screen and (max-width : 480px)
   .list-payment
     margin: 24px 0 0

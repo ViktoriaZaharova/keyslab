@@ -9,11 +9,13 @@
   flex-wrap: wrap
   font-size: 10px
   color: #202020
+
   li
     a
       color: #666666
       display: flex
       align-items: center
+
       &:after
         content: ''
         display: inline-block
@@ -31,3 +33,52 @@
 .sales
   h1
     margin: 0 0 80px
+
+
+.sales-content
+  max-width: 644px
+  width: 100%
+  margin: 0 0 80px
+  h3
+    margin: 0 0 30px
+    font-size: 20px
+    font-weight: 600
+
+.sales-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+
+.sales-box
+  width: calc(50% - 16px)
+  margin: 0 0 32px
+  background: #FAFAFA
+  padding: 30px
+  display: flex
+  flex-direction: column
+  height: 250px
+  &__title
+    width: 100%
+    display: block
+    color: #202020
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: bold
+  &__footer
+    width: 100%
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: auto 0 0
+  &__price
+    color: #666666
+    font-size: 15px
+  &__percent
+    color: #CD5237
+    font-size: 64px
+    font-weight: bold
+    text-align: right
+    line-height: 100%
