@@ -1,0 +1,101 @@
+@import "fonts"
+@import "vars"
+
+.cabinet-page
+  .title-wrapper
+    h1
+      margin: 0
+
+  .tabs__header
+    padding: 0
+
+  .tabs__caption
+    font-weight: bold
+    width: 100%
+    color: #202020
+
+    li
+      flex: 1
+      padding: 10px 24px
+
+  .tabs__body
+    padding: 80px 0 0
+
+    .wrapper
+      margin: 0 0 120px
+
+      &:last-child
+        margin: 0
+
+.form-cabinet
+  max-width: 644px
+  width: 100%
+
+  .form-group
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+
+    label
+      width: calc(50% - 16px)
+
+      &:last-child
+        margin-left: auto
+
+.order-card
+  width: 100%
+  margin: 0 0 24px
+  background: #FAFAFA
+  padding: 0 30px
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  &__head
+    width: 33.333%
+    padding: 30px 30px 32px
+    border:
+      right: 1px solid #DEDEDE
+      bottom: 1px solid #DEDEDE
+    &:first-child
+      padding-left: 0
+    &:nth-child(3)
+      padding-right: 0
+      border-right: none
+  &__footer
+    width: 33.333%
+    padding: 32px 0 30px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &:last-child
+    margin: 0
+  h3
+    margin: 0 0 32px
+    text-transform: none
+    font-size: 12px
+  .box-text
+    font-size: 20px
+  .total-sum
+    display: flex
+    align-items: flex-end
+    font-size: 15px
+    font-weight: 600
+  .sum-val
+    font-size: 20px
+    margin: 0 0 0 6px
+    font-weight: bold
+  .btn
+    padding: 10px 34px
+
+.btn-group
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  .btn
+    &:last-child
+      margin-left: auto

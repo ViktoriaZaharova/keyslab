@@ -3,6 +3,11 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+  .order-card .btn
+    padding: 10px 18px
+
+
 @media only screen and (max-width : 1200px)
   .product-card__img
     height: 240px
@@ -35,6 +40,8 @@
     font-size: 60px
     line-height: 60px
 
+  .order-card .btn
+    padding: 10px 15px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -127,6 +134,19 @@
   .politics
     .sidebar
       display: none
+
+  .cabinet-page
+    .tabs__caption
+      width: calc(100% + 32px)
+      margin: 0 -16px
+      border-bottom: 1px solid #DEDEDE
+      display: flex
+    .tabs__body
+      border: none
+      padding: 40px 0 0
+      .wrapper
+        margin: 0 0 60px
+
 
 
 /* Small Devices, Tablets */
@@ -275,6 +295,56 @@
       height: 100%
     &__price
       font-size: 15px
+
+  .tabs__body
+    padding: 30px 0 0
+
+  .tabs__header
+    padding: 0 0 20px
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+  .search-result-val
+    margin: 0 0 10px
+
+  .btn-category-tab
+    display: flex
+
+  .tabs__caption
+    display: none
+    margin: 10px 0 0
+    li
+      width: 100%
+
+  .order-card
+    padding: 0 20px 20px
+    h3
+      margin: 0 0 12px
+    .box-text
+      font-size: 14px
+    .sum-val
+      font-size: 18px
+    .total-sum
+      font-size: 14px
+
+  .order-card__head
+    padding: 20px 0
+    width: 100%
+    border-right: none
+
+  .order-card__footer
+    width: 100%
+    padding: 20px 0
+    &:last-child
+      padding: 12px 0 0
+
+  .btn-group
+    .btn
+      width: 100%
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
@@ -586,8 +656,28 @@
   h1
     font-size: 22px
 
+  .page h1
+    margin: 0 0 40px
+
   .politics-box h3
     margin: 0 0 24px
+
+  .tabs__body
+    padding: 20px 0 0
+
+  .search-page
+    h1
+      margin: 0 0 24px
+
+  .form-cabinet .form-group label
+    width: 100%
+
+  .cabinet-page
+    .title-wrapper
+      flex-direction: column
+      align-items: flex-start
+      h1
+        margin: 0 0 24px
 
 @media only screen and (max-width : 480px)
   .list-payment
