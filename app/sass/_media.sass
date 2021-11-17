@@ -43,6 +43,9 @@
   .order-card .btn
     padding: 10px 15px
 
+  .callback-box
+    padding: 40px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   .subscribe
@@ -147,6 +150,28 @@
       .wrapper
         margin: 0 0 60px
 
+  .callback-box
+    padding: 32px 16px
+    form
+      max-width: 340px
+    h3
+      font-size: 22px
+      margin: 0 0 20px
+
+  .btn-mobile
+    display: flex
+    margin: 40px 0 0
+
+  .contacts-page
+    .wrapper
+      margin: 0 0 60px
+    .sidebar
+      .btn
+        display: none
+
+
+  .list-contacts
+    max-width: none
 
 
 /* Small Devices, Tablets */
@@ -219,9 +244,6 @@
     width: 100%
     margin: 0 0 16px
 
-  .product-card
-    &__img
-      height: 136px
 
   .product-col
     margin-bottom: 24px
@@ -346,6 +368,37 @@
       &:last-child
         margin: 0
 
+  .catalog-page
+    .tabs__body
+      border: none
+    .tabs__header
+      padding: 0
+    h1
+      margin: 0 0 39px
+    .search-result-val
+      margin: 16px 0 0
+      width: 100%
+      padding: 24px 0 0
+      border-top: 1px solid #DEDEDE
+
+  .col-6
+    width: 66.6666%
+
+  .callback-box__content
+    width: 100%
+    max-width: none
+
+  .callback-box
+    form
+      max-width: none
+      margin: 32px 0 0
+      label
+        margin: 0 0 20px
+      button
+        margin: 12px 0 0
+    h3
+      max-width: 256px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .news-card
@@ -367,6 +420,11 @@
     .btn-next-links
       top: auto
       bottom: 0
+
+  .product-card
+    &__img
+      height: 175px
+
 
   .products-day-slider
     .slick-slide
@@ -679,6 +737,51 @@
       h1
         margin: 0 0 24px
 
+  .help-box
+    h3
+      font-size: 18px
+    &__body
+      width: 100%
+      order: 1
+      padding: 32px 24px
+
+
+    &__img
+      width: 100%
+      padding: 0
+      height: 190px
+
+  .col-6, .col-12-mob
+    width: 100%
+
+  .form-help
+    margin: 20px 0 0
+
+  .list-contacts
+    li
+      margin: 0 0 20px
+      padding: 0 0 20px
+      flex-direction: column
+      align-items: flex-start
+      span
+        display: block
+        margin: 4px 0 0
+    &__links
+      font-size: 14px
+      &-phone
+        font-size: 18px
+
+  .list-requisites
+    li
+      margin: 0 0 10px
+      padding: 0 0 10px
+      span
+        margin: 10px 0 0
+
+  .contacts-page
+    .btn-mobile
+      width: 100%
+
 @media only screen and (max-width : 480px)
   .list-payment
     margin: 24px 0 0
@@ -711,7 +814,14 @@
       &:nth-child(-n+2), &:last-child
         padding: 0
 
+  .col-6, .col-12-mob
+    width: 100%
 
+  .catalog-page
+    .product-col
+      display: none
+      &:nth-child(-n+11)
+        display: block
 
 @media only screen and (max-width : 480px)
 	/**/

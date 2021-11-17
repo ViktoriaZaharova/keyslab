@@ -96,21 +96,90 @@
   </div>
 </header>
 
-<section class="search-page page">
+<section class="search-page cabinet-page contacts-page page">
   <div class="container">
     <ul class="breadcrumb">
-      <li><span>Результаты поиска</span></li>
+      <li><a href="index.html">Главная </a></li>
+      <li><span>Контакты</span></li>
     </ul>
 
-    <h1>«олололо»(0)</h1>
+    <div class="title-wrapper mb-50">
+      <h1>Контакты</h1>
+    </div>
 
     <div class="wrapper">
-      <div class="tabs__body">
-        <div class="box-text">
-          <p>По вашему запросу ничего не найдено, попробуйте <a href="search.html" class="color-accent d-inline">повторить поиск</a> или посмотрите
-            <a href="catalog.html" class="color-accent d-inline">каталог</a></p>
+      <div class="sidebar">
+        <div class="subtitle-page">Способы связи</div>
+
+        <a href="#callback__modal" class="btn btn-accent open_modal"><span>Написать директору</span></a>
+      </div>
+
+      <div class="wrapper-content">
+        <ul class="list-contacts">
+          <li>
+            <a href="tel:+73432264625" class="list-contacts__links list-contacts__links-phone">8 343 226 46 25</a>
+            <span>с 8:00-22:00 МСК</span>
+          </li>
+          <li>
+            <a href="mailto:sale@digi-keys.ru" class="list-contacts__links">sale@digi-keys.ru</a>
+            <span>Финансовые вопросы</span>
+          </li>
+          <li>
+            <a href="mailto:support@digi-keys.ru" class="list-contacts__links">support@digi-keys.ru</a>
+            <span>Поддержка</span>
+          </li>
+        </ul>
+
+
+        <a href="#callback__modal" class="btn btn-accent open_modal btn-mobile"><span>Написать директору</span></a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="subtitle-page">Юридическая информация</div>
+
+      </div>
+
+      <div class="wrapper-content">
+        <ul class="list-requisites list-contacts">
+          <li><strong>ИП:</strong><span>Пащенко Э.Л.</span></li>
+          <li><strong>ИНН:</strong><span>231221935418</span></li>
+          <li><strong>ОГРН:</strong><span>321237500279053</span></li>
+          <li><strong>Р/С:</strong><span>40802810000002450020</span></li>
+          <li><strong>Банк:</strong><span>А/О "Тинькофф Банк"</span></li>
+          <li><strong>БИК:</strong><span>044525974</span></li>
+          <li><strong>Корр. счет:</strong><span>30101810145250000974</span></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="callback-box bg-grey">
+      <div class="callback-box__content">
+        <h3>У вас остались вопросы?</h3>
+        <div class="box-text">Если хотите получить подробный ответ на свой вопрос, опишите подробно ситуацию и наши
+          специалисты свяжутся с Вами для помощи. Работаем 24/7
         </div>
       </div>
+      <form method="post" class="form-basket form-callback">
+        <label>
+          <input type="text" placeholder="Ваше имя" name="name">
+        </label>
+
+        <label>
+          <input type="text" placeholder="Ваш e-mail" name="mail">
+        </label>
+
+        <label>
+          <textarea name="message" placeholder="Опишите свою проблему" id="" cols="30" rows="10"></textarea>
+        </label>
+
+        <button class="btn btn-accent" type="submit"><span>Написать в поддержку</span></button>
+        <div class="consent">Отправляя форму, я принимаю условия <a href="#" class="text-decoration d-inline"
+                                                                    target="_blank">пользовательского соглашения</a>
+        </div>
+      </form>
     </div>
   </div>
 </section>

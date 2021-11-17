@@ -10,7 +10,7 @@ $(document).ready(function () {
         dotsClass: 'dots-slick-my',
         appendDots: '.home-slider-footer',
         appendArrows: '.home-slider-nav',
-        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#btn-arrow-left"></use></svg></button>',
         nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
     });
 
