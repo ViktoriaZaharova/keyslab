@@ -42,6 +42,11 @@
               stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="arrow-top" viewBox="0 0 8 5">
+        <path d="M1 4L4 1L7 4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+
     <symbol id="star" viewBox="0 0 12 11">
         <path d="M6 0L7.97496 3.2817L11.7063 4.1459L9.19555 7.0383L9.52671 10.8541L6 9.36L2.47329 10.8541L2.80445 7.0383L0.293661 4.1459L4.02504 3.2817L6 0Z"/>
     </symbol>

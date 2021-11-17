@@ -185,3 +185,8 @@ $('.btn-category-tab').on('click', function (e) {
     e.preventDefault();
     $(this).siblings('.tabs__caption').slideToggle();
 });
+
+$('.btn-drop-toggle').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('click').parents('.form-checkout__total').find('.form-checkout__total-body').slideToggle();
+});

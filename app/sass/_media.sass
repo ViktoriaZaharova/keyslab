@@ -46,6 +46,13 @@
   .callback-box
     padding: 40px
 
+  .form-checkout .consent
+    margin: 12px 0 0
+    width: 100%
+    max-width: none
+    a
+      display: block
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   .subscribe
@@ -172,6 +179,18 @@
 
   .list-contacts
     max-width: none
+
+  .form-checkout__total
+    max-width: 400px
+    padding: 20px 16px
+
+  .form-checkout__content
+    width: calc(100% - 400px)
+
+  .form-checkout button
+    max-width: none
+    width: fit-content
+
 
 
 /* Small Devices, Tablets */
@@ -398,6 +417,54 @@
         margin: 12px 0 0
     h3
       max-width: 256px
+
+  .form-checkout__total
+    max-width: none
+    .total-sum
+      font-size: 18px
+    .total-basket
+      p
+        font-size: 14px
+    .basket-card__img
+      width: 80px
+      height: 80px
+    .basket-card__body
+      width: calc(100% - 80px)
+      padding: 0 0 0 8px
+
+  .form-checkout__total-head
+    h4
+      font-size: 14px
+    .total-sum
+      display: block
+      font-size: 14px
+
+  .form-checkout__total-body
+    display: none
+
+  .btn-drop-toggle
+    display: flex
+
+  .form-checkout__content
+    order: 1
+    width: 100%
+    padding: 0
+    margin: 40px 0 0
+
+  .form-checkout__content h3
+    margin: 0 0 12px
+    font-size: 14px
+    font-weight: normal
+
+  .form-checkout
+    input
+      font-size: 15px
+      height: 52px
+    &__footer
+      margin: 32px 0 0
+    button
+      max-width: 288px
+      width: 100%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)

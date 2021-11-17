@@ -767,6 +767,104 @@ h3
   &:hover
     color: $accent
 
+//page checkout
+.form-checkout__content
+  h3
+    margin: 0 0 24px
+
+
+.form-checkout
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  &__content
+    width: calc(100% - 475px)
+    padding: 0 32px 0 0
+    display: flex
+    flex-direction: column
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: auto 0 0
+  .consent
+    margin: 0 0 0 36px
+    max-width: 293px
+  button
+    height: 60px
+    max-width: 306px
+    width: 100%
+
+.form-checkout__total
+  max-width: 475px
+  width: 100%
+  padding: 40px
+  &-head
+    width: 100%
+
+    display: flex
+    align-items: center
+    .total-sum
+      display: none
+    h4
+      color: #202020
+      font-size: 20px
+  .promo-code
+    margin: 0 0 24px
+  .total-basket
+    padding: 24px 0 0
+    margin: 0
+    color: #202020
+    border: none
+      top: 1px solid #DEDEDE
+    p
+      color: #202020
+      font-size: 15px
+  .total-sum
+    font-size: 20px
+  .basket-card
+    padding: 0 0 24px
+    margin: 0 0 24px
+  input
+    background: transparent
+  .basket-card
+    &__img
+      width: 97px
+      height: 90px
+    &__body
+      width: calc(100% - 97px)
+      padding: 10px 0 0 12px
+    .price-wrapper
+      margin: 0
+      white-space: nowrap
+
+.label-description
+  width: 100%
+  display: block
+  margin: 12px 0 0
+  color: #666666
+  font-size: 12px
+
+.btn-drop-toggle
+  margin: 0 auto 0 8px
+  display: none
+  align-items: center
+  justify-content: center
+  width: 8px
+  height: 5px
+  fill: none
+  stroke: #202020
+  transform: rotate(180deg)
+  &.click
+    transform: none
+
+.form-checkout__total-body
+  width: 100%
+  margin: 40px 0 0
+
 
 @import "header"
 @import "catalog"
