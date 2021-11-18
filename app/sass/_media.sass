@@ -191,7 +191,38 @@
     max-width: none
     width: fit-content
 
+  .article-page
+    padding: 24px 0 0
+    .wrapper-content
+      max-width: none
+    .sidebar
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      align-items: center
+      .news-date
+        width: 50%
+        margin: 16px 0 0
+    h1
+      margin: 0 0 24px
 
+  .news-views
+    width: 50%
+    margin: 16px 0 0
+
+  .news-time
+    width: 50%
+    margin: 0 0 0 auto
+
+  .news-views, .article-page .sidebar .news-date
+    order: 1
+
+  .list-share
+    order: 1
+    margin: 24px 0 0
+
+  .mb-40, .mb-60
+    margin-bottom: 32px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 860px)
@@ -465,6 +496,25 @@
     button
       max-width: 288px
       width: 100%
+
+  .card-list__img
+    display: none
+
+  .card-list__body
+    width: 100%
+    padding: 0
+
+  .btn-add-basket
+    padding: 8px 10px
+    height: 39px
+    span.btn-add-basket__icon
+      display: flex
+    span.btn-add-basket__text
+      display: none
+
+  .card-list
+    padding: 16px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
@@ -848,6 +898,58 @@
   .contacts-page
     .btn-mobile
       width: 100%
+
+  .card-list__title
+    max-width: 207px
+    width: 100%
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  .article-page
+    .box-text
+      font-size: 14px
+
+  .list-dots
+    font-size: 14px
+    line-height: 150%
+    li
+      padding: 0 0 0 16px
+      &:before
+        width: 4px
+        height: 4px
+
+  .article-page .politics-box h3
+    margin: 0 0 16px
+
+  .col-7, .col-5
+    width: 100%
+
+  .article-images
+    .mb-60
+      margin-bottom: 16px
+
+  .article-img__name
+    margin: 12px 0 0
+
+  .btn-play
+    width: 60px
+    height: 60px
+    .svg-icon
+      width: 12px
+      height: 12px
+
+  .video-box__footer
+    flex-direction: column
+    align-items: flex-start
+
+  .video-box__title
+    width: 100%
+    margin: 0 0 4px
+    font-size: 14px
+
+  .read-recommendation h2
+    margin: 0 0 10px
 
 @media only screen and (max-width : 480px)
   .list-payment
