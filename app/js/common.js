@@ -75,6 +75,60 @@ $(document).ready(function () {
 
     setProgress(0);
 
+
+    $('.clients-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        variableWidth: true,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        appendArrows: '.clients-slider-nav',
+        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+        responsive: [
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+            }
+        ]
+    });
+
+    let productSlider2 = $('.clients-slider');
+
+    $('.clients-slider-nav .counter-slide__default').text("/" + productSlider2.slick("getSlick").slideCount);
+
+    productSlider2.on('afterChange', function (event, slick, currentSlide) {
+        $(".clients-slider-nav .counter-slide__cp").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+    });
+
+
+    function setProgress2(index) {
+        const calc = ((index + 1) / (productSlider2.slick('getSlick').slideCount)) * 100;
+
+        progressBar2
+            .css('width', calc + '%');
+
+    }
+
+    let progressBar2 = $('.progress-clients-bg');
+
+    productSlider2.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        setProgress2(nextSlide);
+
+    });
+
+    setProgress2(0);
+
 });
 
 // amount
@@ -190,3 +244,18 @@ $('.btn-drop-toggle').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('click').parents('.form-checkout__total').find('.form-checkout__total-body').slideToggle();
 });
+
+// accordeon
+function accordeon() {
+    var panel = $('.panel_heading');
+
+    if (panel.hasClass('in')) {
+        $('.in').find('.block_hover').slideDown();
+    }
+
+    $('.panel_heading .block_title').on('click', function () {
+        $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+    });
+}
+
+accordeon();
