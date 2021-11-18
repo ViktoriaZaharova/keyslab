@@ -259,3 +259,13 @@ function accordeon() {
 }
 
 accordeon();
+
+// fixed card-list
+$(window).scroll(function () {
+    var heightHome = $('.product-page').height();
+    if ($(this).scrollTop() > heightHome) {
+        $('.card-list-fixed').fadeIn();
+    } else {
+        $('.card-list-fixed').fadeOut();
+    }
+});
