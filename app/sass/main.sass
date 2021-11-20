@@ -211,11 +211,22 @@ button, .btn
 .btn-next-links
   width: 32px
   height: 32px
-  background: url("../img/next.svg") no-repeat center
-    size: 100%
+  //background: url("../img/next.svg") no-repeat center
+  //  size: 100%
+  //&:hover
+  //  background: url("../img/next-hover.svg") no-repeat center
+  //    size: 100%
+  stroke: $accent
+  fill: none
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 10px
+  border: 1px solid #DEDEDE
+    radius: 50%
   &:hover
-    background: url("../img/next-hover.svg") no-repeat center
-      size: 100%
+    border-color: $accent
+
 
 .container
   max-width: 1352px

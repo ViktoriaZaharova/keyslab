@@ -194,11 +194,22 @@ button, .btn {
 .btn-next-links {
   width: 32px;
   height: 32px;
-  background: url("../img/next.svg") no-repeat center;
-    background-size: 100%; }
+  stroke: #CD5237;
+  fill: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  border: 1px solid #DEDEDE;
+    border-radius: 50%; }
   .btn-next-links:hover {
-    background: url("../img/next-hover.svg") no-repeat center;
-      background-size: 100%; }
+    border-color: #CD5237; }
 
 .container {
   max-width: 1352px;
@@ -1000,6 +1011,9 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  header .logo {
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0); }
 
 .header-top {
   background: #FAFAFA;
@@ -1493,8 +1507,7 @@ header {
   .news-card:hover .news-card__title {
     color: #CD5237; }
   .news-card:hover .btn-next-links {
-    background: url("../img/next-hover.svg") no-repeat center;
-      background-size: cover; }
+    border-color: #CD5237; }
 
 .news-date {
   margin: 0 0 0 16px; }
@@ -2451,8 +2464,8 @@ header {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0px 0 30px;
-    margin: 0 0 30px;
+    padding: 0px 0 24px;
+    margin: 0 0 24px;
     border-bottom: 1px solid #DEDEDE; }
     .list-contacts li:last-child {
       padding: 0;
@@ -2461,7 +2474,19 @@ header {
   .list-contacts__links {
     font-size: 20px;
     color: #202020;
-    border-bottom: 1px solid #202020; }
+    position: relative; }
+    .list-contacts__links:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #202020;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+    .list-contacts__links:hover:before {
+      width: 0; }
     .list-contacts__links-phone {
       font-size: 28px; }
 
@@ -2760,12 +2785,9 @@ header {
     fill: #CD5237; }
 
 .read-recommendation {
-  margin: 60px 0 0; }
+  margin: 120px 0 0; }
   .read-recommendation h2 {
     margin: 0 0 20px; }
-  .read-recommendation .news-card__img {
-    -webkit-filter: none;
-            filter: none; }
 
 .orders-article h2 {
   margin: 0 0 40px; }
@@ -3001,7 +3023,7 @@ header {
   display: none; }
 
 .product-page {
-  margin: -20px 0 80px; }
+  margin: -30px 0 80px; }
   .product-page .advantages {
     margin: 60px 0 0;
     border: none; }
@@ -3989,9 +4011,6 @@ footer {
     border-bottom: 1px solid #DEDEDE; }
     header .btn-cabinet {
       display: none; }
-    header .logo {
-      -webkit-transform: translateX(50%);
-              transform: translateX(50%); }
   .header-nav__links {
     padding: 0 8px; }
   .btn-menu__icon {
