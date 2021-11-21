@@ -1646,7 +1646,8 @@ header {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 20px 20px 20px 40px; }
+  padding: 20px 20px 20px 40px;
+  background: #fff; }
   .modal-footer .btn {
     height: 80px;
     width: 100%;

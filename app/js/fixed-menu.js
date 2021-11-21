@@ -30,6 +30,7 @@ $(window).on('load scroll resize', function() {
                         'top': offset < 0 ? offset : 0,
                         'width': width + (aside.get(0).scrollHeight + 2 > maxHeight ? sbWidth : 0),
                         'max-height': maxHeight,
+                        'padding-top': '60px'
                         // 'overflow': 'auto'
                     });
                 }
