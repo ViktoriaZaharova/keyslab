@@ -637,17 +637,17 @@
 <!--modals-->
 <div class="modal__div" id="basket__modal">
   <div class="modal__wrapper">
-    <div class="scroll-horizontal">
-      <div class="modal-head">
-        <h3 class="modal-title">Корзина (6)</h3>
-        <div class="modal__close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </div>
+    <div class="modal-head">
+      <h3 class="modal-title">Корзина (6)</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
-      <div class="modal-body">
-        <form method="post" class="form-basket">
+    </div>
+    <div class="modal-body">
+      <form method="post" class="form-basket">
+        <div class="modal-body__wrapper scroll-horizontal">
           <div class="basket-card">
             <a href="#" class="basket-card__img"><img src="img/product1.png" alt=""></a>
             <div class="basket-card__body">
@@ -766,6 +766,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="modal-footer">
 
           <label class="promo-code">
             <input type="text" placeholder="Есть промокод?" name="code_promo">
@@ -775,30 +777,25 @@
             <p>Итого:</p>
             <div class="total-sum">2 190 ₽</div>
           </div>
-
-          <div class="modal-footer">
-            <button class="btn btn-accent" type="submit"><span>Оформить заказ</span></button>
-          </div>
-        </form>
-      </div>
+          <button class="btn btn-accent" type="submit"><span>Оформить заказ</span></button>
+        </div>
+      </form>
     </div>
-
   </div>
 </div>
 
-<div class="modal__div" id="order__modal">
+<div class="modal__div modal__div2" id="order__modal">
   <div class="modal__wrapper">
-    <div class="scroll-horizontal">
-      <div class="modal-head">
-        <h3 class="modal-title">Подробности заказа</h3>
-        <div class="modal__close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </div>
+    <div class="modal-head">
+      <h3 class="modal-title">Подробности заказа</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
-      <div class="modal-body">
-
+    </div>
+    <div class="modal-body">
+      <div class="modal-body__wrapper scroll-horizontal">
         <ul class="details-order">
           <li>
             <p>Номер заказа</p><span>№488362919</span>
@@ -852,30 +849,28 @@
             </div>
           </div>
         </div>
+      </div>
 
-
-        <div class="modal-footer">
-          <a href="#" class="btn btn-accent"><span>Отзыв</span></a>
-        </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-accent"><span>Отзыв</span></a>
       </div>
     </div>
-
   </div>
 </div>
 
-<div class="modal__div" id="order__modal2">
+<div class="modal__div modal__div2" id="order__modal2">
   <div class="modal__wrapper">
-    <div class="scroll-horizontal">
-      <div class="modal-head">
-        <h3 class="modal-title">Подробности заказа</h3>
-        <div class="modal__close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="modal-body">
 
+    <div class="modal-head">
+      <h3 class="modal-title">Подробности заказа</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-body__wrapper scroll-horizontal">
         <ul class="details-order">
           <li>
             <p>Номер заказа</p><span>№488362919</span>
@@ -929,14 +924,12 @@
             </div>
           </div>
         </div>
+      </div>
 
-
-        <div class="modal-footer">
-          <a href="#" class="btn btn-accent"><span>Повторить заказ</span></a>
-        </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-accent"><span>Повторить заказ</span></a>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -988,19 +981,19 @@
   </div>
 </div>
 
-<div class="modal__div" id="callback__modal">
+<div class="modal__div modal__div2" id="callback__modal">
   <div class="modal__wrapper">
-    <div class="scroll-horizontal">
-      <div class="modal-head">
-        <h3 class="modal-title">Написать директору</h3>
-        <div class="modal__close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </div>
+    <div class="modal-head">
+      <h3 class="modal-title">Написать директору</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
-      <div class="modal-body">
-        <form method="post" class="form-basket form-callback">
+    </div>
+    <div class="modal-body">
+      <form method="post" class="form-basket form-callback">
+        <div class="modal-body__wrapper scroll-horizontal">
           <div class="box-text">
             <p>Подробно расскажем о наших товарах, видах и стоимости доставки, подготовим индивидуальное предложение для
               оптовых клиентов!</p>
@@ -1026,33 +1019,32 @@
             <span class="input-title">Ваш вопрос</span>
             <textarea name="message" placeholder="Эдуард,"></textarea>
           </label>
-
-          <div class="modal-footer">
-            <button class="btn btn-accent" type="submit"><span>Отправить обращение</span></button>
-            <div class="consent">Отправляя форму, я принимаю условия <a href="#" class="text-decoration d-inline"
-                                                                        target="_blank">пользовательского соглашения</a>
-            </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-accent" type="submit"><span>Отправить обращение</span></button>
+          <div class="consent">Отправляя форму, я принимаю условия <a href="#" class="text-decoration d-inline"
+                                                                      target="_blank">пользовательского соглашения</a>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
 
   </div>
 </div>
 
-<div class="modal__div" id="login__modal">
+<div class="modal__div modal__div2" id="login__modal">
   <div class="modal__wrapper">
-    <div class="scroll-horizontal">
-      <div class="modal-head">
-        <h3 class="modal-title">Вход в аккаунт</h3>
-        <div class="modal__close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </div>
+    <div class="modal-head">
+      <h3 class="modal-title">Вход в аккаунт</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
-      <div class="modal-body">
-        <form method="post" class="form-basket form-callback">
+    </div>
+    <div class="modal-body">
+      <form method="post" class="form-basket form-callback">
+        <div class="modal-body__wrapper scroll-horizontal">
           <label>
             <span class="input-title">Логин</span>
             <input type="text" placeholder="Ваше имя" name="name">
@@ -1069,30 +1061,29 @@
             <p>Нет аккаунта?</p>
             <a href="#registration__modal" class="links-black text-decoration open_modal">Зарегистрируйтесь</a>
           </div>
-
-          <div class="modal-footer">
-            <button class="btn btn-accent" type="submit"><span>Войти</span></button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-accent" type="submit"><span>Войти</span></button>
+        </div>
+      </form>
     </div>
-
   </div>
+
 </div>
 
-<div class="modal__div" id="registration__modal">
+<div class="modal__div modal__div2" id="registration__modal">
   <div class="modal__wrapper">
-    <div class="scroll-horizontal">
-      <div class="modal-head">
-        <h3 class="modal-title">Регистрация</h3>
-        <div class="modal__close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </div>
+    <div class="modal-head">
+      <h3 class="modal-title">Регистрация</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
-      <div class="modal-body">
-        <form method="post" class="form-basket form-callback">
+    </div>
+    <div class="modal-body">
+      <form method="post" class="form-basket form-callback">
+        <div class="modal-body__wrapper scroll-horizontal">
           <label>
             <span class="input-title">Имя</span>
             <input type="text" placeholder="Ваше имя" name="name">
@@ -1120,36 +1111,36 @@
             <p>Уже есть аккаунт?</p>
             <a href="#login__modal" class="links-black text-decoration open_modal">Вход</a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <label class="checkbox">
+            <input type="checkbox" class="inp-check" name="check" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я согласен с условиями <a href="#"
+                                                                  class="d-inline">пользовательского соглашения</a></span>
+          </label>
 
-          <div class="modal-footer">
-            <label class="checkbox">
-              <input type="checkbox" class="inp-check" name="check" checked>
-              <span class="checkbox-custom"></span>
-              <span class="checkbox-text">Я согласен с условиями <a href="#" class="d-inline">пользовательского соглашения</a></span>
-            </label>
-
-            <button class="btn btn-accent" type="submit"><span>Регистрация</span></button>
-          </div>
-        </form>
-      </div>
+          <button class="btn btn-accent" type="submit"><span>Регистрация</span></button>
+        </div>
+      </form>
     </div>
 
   </div>
 </div>
 
-<div class="modal__div" id="password__modal">
+<div class="modal__div modal__div2" id="password__modal">
   <div class="modal__wrapper">
-    <div class="scroll-horizontal">
-      <div class="modal-head">
-        <h3 class="modal-title">Забыли пароль?</h3>
-        <div class="modal__close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </div>
+    <div class="modal-head">
+      <h3 class="modal-title">Забыли пароль?</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </div>
-      <div class="modal-body">
-        <form method="post" class="form-basket form-callback">
+    </div>
+    <div class="modal-body">
+      <form method="post" class="form-basket form-callback">
+        <div class="modal-body__wrapper scroll-horizontal">
           <label>
             <span class="input-title">E-mail</span>
             <input type="text" placeholder="Ваш-email" name="mail">
@@ -1159,15 +1150,14 @@
             <p>Уже есть аккаунт?</p>
             <a href="#login__modal" class="links-black text-decoration open_modal">Вход</a>
           </div>
-
-          <div class="modal-footer">
-            <button class="btn btn-accent" type="submit"><span>Отправить</span></button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-accent" type="submit"><span>Отправить</span></button>
+        </div>
+      </form>
     </div>
-
   </div>
+
 </div>
 
 <div class="modal__div modal__div-search" id="search__modal">

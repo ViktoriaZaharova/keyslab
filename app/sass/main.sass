@@ -160,22 +160,22 @@ button, .btn
   &:after
     content: ''
     position: absolute
-    right: -1px
+    right: -2px
     top: -1px
     width: 0
     height: calc(100% + 2px)
-    transition: .4s ease
+    transition: .6s ease
     display: inline-block
 
   &:hover
     color: #fff
     border-color: $black
-    background: $black
+    background: $accent
 
     &:after
-      width: calc(50% + 1px)
-      background: $accent
-      border: 1px solid $accent
+      width: calc(100% + 2px)
+      background: $black
+      border: 1px solid $black
 
   &:focus
     color: #fff
@@ -892,6 +892,16 @@ h3
 .form-checkout__total-body
   width: 100%
   margin: 40px 0 0
+
+.tabs__caption
+  li
+    &:hover
+      background: #FAFAFA
+      color: #202020
+  .active
+    &:hover
+      background: #FAFAFA
+      color: #202020
 
 
 @import "header"

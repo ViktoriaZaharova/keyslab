@@ -191,6 +191,7 @@ $(function () {
 
         $('html').removeClass('no-scroll');
     });
+
 });
 //end
 
@@ -269,3 +270,4 @@ $(window).scroll(function () {
         $('.card-list-fixed').fadeOut();
     }
 });
+
