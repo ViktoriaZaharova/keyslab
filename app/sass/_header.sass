@@ -4,8 +4,10 @@
 //header
 header
   margin: 0 0 30px
+
   .container
     align-items: center
+
   .logo
     transform: translate(50%, 0)
 
@@ -13,6 +15,7 @@ header
   background: $grey-light
   padding: 16px 0
   font-size: 12px
+  display: none
 
 .list-message
   display: flex
@@ -20,25 +23,31 @@ header
   flex-wrap: wrap
   margin: 0 0 0 auto
   font-size: 12px
+
   li
     display: flex
     align-items: center
+
     &:after
       content: '//'
       display: inline-block
       margin: 0 10px
+
     &:last-child
       &:after
         display: none
+
     a
       color: $black
       display: flex
       align-items: center
+
       &:hover
         color: $accent
 
 .phone
   color: $black
+
   &:hover
     color: $accent
 
@@ -50,6 +59,7 @@ header
 
 .header-center
   padding: 20px 0
+
   .container
     justify-content: space-between
 
@@ -69,10 +79,12 @@ header
   color: $black
   stroke: $black
   text-transform: uppercase
+
   &__icon
     margin: 0 10px 0 0
     width: 32px
     height: 32px
+
   &:hover
     color: $black
 
@@ -84,11 +96,15 @@ header
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     border:
-      right: 1px solid #DEDEDE
-    &:last-child
+      left: 1px solid #DEDEDE
+
+    &:first-child
       border: none
+
+    &:last-child
       .header-nav__links
         padding-right: 0
 
@@ -103,6 +119,34 @@ header
   width: 24px
   height: 24px
   padding: 4px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.link-tg, .link-phone
+  fill: #202020
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .header-nav__links-icon
+    padding: 0
+
+
+.link-phone
+  fill: #202020
+  stroke: none
+
+  .header-nav__links-icon
+    width: 32px
+    height: 24px
+
+.link-tg
+  stroke: none
+
+  .header-nav__links-icon
+    width: 21px
+    height: 24px
 
 .btn-basket__val
   margin: 0 0 0 4px
@@ -120,12 +164,16 @@ header
   width: 100%
   text-transform: uppercase
   font-size: 12px
+
   li
     margin: 0 40px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: $black
+
       &:hover
         color: $accent
 

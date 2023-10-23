@@ -41,7 +41,7 @@
   flex-wrap: wrap
 
   li
-    width: calc(50% - 16px)
+    width: calc(25% - 16px)
     display: flex
     align-items: flex-start
     padding: 0 0 12px
@@ -61,6 +61,7 @@
 .payment-box
   display: flex
   align-items: center
+
   &__logo
     width: 32px
     height: 32px
@@ -80,6 +81,7 @@
   max-width: 380px
   width: 100%
   margin: 0 127px 60px 0
+
   &__logo
     padding: 0 0 32px
     display: flex
@@ -96,17 +98,21 @@
       width: 46px
       height: 1px
       background: #DEDEDE
+
   &__body
     width: 100%
     padding: 60px 0 0
+
   h3
     font-weight: bold
     margin: 0 0 20px
     font-size: 20px
     width: 100%
+
   .box-text
     font-size: 15px
     line-height: 150%
+
   &:hover
     .clients-box__logo
       filter: none
@@ -120,11 +126,13 @@
 
 .help
   margin: 150px 0 0
+
   .tabs__header
     padding: 0 0 60px
 
     width: 100%
     overflow-x: auto
+
   .tabs__caption
     white-space: nowrap
     text-transform: none
@@ -132,64 +140,69 @@
     font-weight: 600
     color: rgba(#202020, .3)
     flex-wrap: nowrap
+
     li
       padding: 0
       margin: 0 36px 0 0
+
       &:last-child
         margin: 0
+
     .active
       color: #202020
       background: transparent
+
   .tabs__body
     padding: 26px 0 0
 
 
 .panel_heading
   width: 100%
-  padding: 0 0 30px
-  margin: 0 0 26px
+  padding: 0
+  margin: 0
   border-bottom: 1px solid #DEDEDE
-  &:last-child
-    margin: 0
+
+  &:nth-child(even)
+    background: #FAFAFA
+
   .block_title
     cursor: pointer
     width: 100%
     display: flex
     align-items: center
     justify-content: space-between
+    padding: 32px
+
     h3
+      font-size: 24px
+      font-weight: normal
       text-transform: uppercase
-      font-size: 15px
-      font-weight: bold
+
   &__icon
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    min-width: 32px
-    width: 32px
-    height: 32px
-    padding: 5px
-    border: 1px solid #202020
-      radius: 50%
-    background: #fff
-    stroke: #202020
+    border: none
+    border-radius: 0
+    padding: 7px 9px
+    width: 36px
+    min-width: 36px
+    height: 31px
+    stroke: none
+    fill: #202020
+    transition: .3s ease
+    background: transparent
+
+  &::after
+    display: none
+
   .block_hover
-    padding: 24px 0 0
-    max-width: 507px
+    padding: 0 32px 32px
+    max-width: none
     width: 100%
     line-height: 150%
     font-size: 15px
     display: none
+  &.in
+    .panel_heading__icon
+      .svg-icon
+        display: flex
+        transform: rotate(45deg)
 
-.panel_heading.in
-  .panel_heading__icon
-    &:before
-      content: ''
-      display: block
-      width: 14px
-      height: 1.5px
-      background: #202020
-      border-radius: 4px
-    .svg-icon
-      display: none
