@@ -9,6 +9,10 @@
     margin: 0 0 60px
 
 
+@media only screen and (max-width: 1500px)
+  .article-img-surely, .article-img-attention
+    display: none
+
 @media only screen and (max-width: 1300px)
   .order-card .btn
     padding: 10px 18px
@@ -285,8 +289,9 @@
     width: fit-content
 
   .article-page
-    padding: 24px 0 0
-
+    padding: 24px 0
+    &__head
+      margin: 0 0 24px
     .wrapper-content
       max-width: none
 
@@ -299,9 +304,16 @@
       .news-date
         width: 50%
         margin: 16px 0 0
-
+      .list-share
+        order: inherit
+        margin: 24px 0
     h1
       margin: 0 0 24px
+
+  .interesting-box
+    position: relative
+    width: 100%
+    top: 0
 
   .news-views
     width: 50%
@@ -313,6 +325,12 @@
 
   .news-views, .article-page .sidebar .news-date
     order: 1
+
+  .news-page
+    padding: 0
+
+  .page h1
+    margin: 0 0 24px
 
   .list-share
     order: 1
@@ -388,6 +406,12 @@
   .productions-company-list li
     width: 50%
     margin: 0 0 26px
+
+  .col-8
+    width: 100%
+
+
+
 
 
 /* Small Devices, Tablets */
@@ -1238,18 +1262,12 @@
   h1
     font-size: 22px
 
-  .page h1
-    margin: 0 0 40px
-
   .politics-box h3
     margin: 0 0 24px
 
   .tabs__body
     padding: 20px 0 0
 
-  .search-page
-    h1
-      margin: 0 0 24px
 
   .form-cabinet .form-group label
     width: 100%

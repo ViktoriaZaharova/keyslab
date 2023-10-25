@@ -283,3 +283,14 @@ $(window).scroll(function () {
     }
 });
 
+// copy text click btn
+$(document).ready(function() {
+    $('.copy-paste__link').click(function(e) {
+        e.preventDefault();
+        $(this).parent('.copy-paste').find('.copy-paste__text').text();
+        // var input = $('<textarea>').val(text).appendTo('body').select();
+        document.execCommand('copy');
+        // input.remove();
+        // alert("Текст успешно скопирован в буфер обмена!");
+    });
+});
