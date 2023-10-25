@@ -1,26 +1,38 @@
 $(document).ready(function () {
     $('.home-slider').slick({
         slidesToShow: 1,
-        slidesToScroll: 1,
         fade: true,
-        dots: true,
-        infinite: true,
+        dots: false,
+        infinite: false,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
-        dotsClass: 'dots-slick-my',
-        appendDots: '.home-slider-footer',
-        appendArrows: '.home-slider-nav',
-        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
+        // dotsClass: 'dots-slick-my',
+        // appendDots: '.home-slider-footer',
+        // appendArrows: '.home-slider-nav',
+        // prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+        // nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
     });
+
 
     let homeSlider = $('.home-slider');
 
-    $('.home-slider-footer .counter-slide__default').text("/" + homeSlider.slick("getSlick").slideCount);
+    function setProgressHome(index) {
+        const calc = ((index + 1) / (homeSlider.slick('getSlick').slideCount)) * 100;
 
-    homeSlider.on('afterChange', function (event, slick, currentSlide) {
-        $(".home-slider-footer .counter-slide__cp").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+        progressBarHome
+            .css('width', calc + '%');
+
+    }
+
+    let progressBarHome = $('.home-progress-bg');
+
+    homeSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        setProgressHome(nextSlide);
+
     });
+
+    setProgressHome(0);
 
 
     $('.products-day-slider').slick({
@@ -66,7 +78,7 @@ $(document).ready(function () {
 
     }
 
-    let progressBar = $('.progress-bg');
+    let progressBar = $('.progress-bg-product');
 
     productSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         setProgress(nextSlide);

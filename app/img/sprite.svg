@@ -114,4 +114,11 @@
         <path d="M8.1 16.78V0.219971H9.9V16.78H8.1ZM0.5 9.37997V7.65997H17.5V9.37997H0.5Z"/>
     </symbol>
 
+    <symbol id="link" viewBox="0 0 24 24">
+        <path d="M11.9996 14.3999L11.9996 3.9999M11.9996 3.9999L14.3996 6.7999M11.9996 3.9999L9.59961 6.7999"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9.6 9.6001H4V20.0001H20V9.6001H14.4" stroke-linecap="square"/>
+    </symbol>
+
+
 </svg>
