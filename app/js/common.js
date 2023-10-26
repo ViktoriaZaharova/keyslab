@@ -240,10 +240,27 @@ $(document).ready(function () {
 //плавный скролл end
 
 $(function () {
-    $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+    $('ul.tabs__caption li').click(function () {
         $(this)
             .addClass('active').siblings().removeClass('active')
             .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+
+        let id = $(this).attr('data-tab'),
+            content = $(this).parents('.tabs').find('.js-tab-content[data-tab="' + id + '"]');
+
+        $(this).parents('.tabs').find('.js-tab-content.active').removeClass('active'); // 3
+        content.addClass('active');
+    });
+});
+
+$(document).ready(function () {
+    $(".js-tab-trigger").click(function () {
+
+
+        $(this).parents('.tabs').find('.js-tab-trigger.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+         // 4
     });
 });
 
@@ -321,15 +338,3 @@ $(function () {
     });
 });
 
-$(document).ready(function () {
-    $(".js-tab-trigger").click(function () {
-        var id = $(this).attr('data-tab'),
-            content = $(this).parents('.tabs').find('.js-tab-content[data-tab="' + id + '"]');
-
-        $(this).parents('.tabs').find('.js-tab-trigger.active').removeClass('active'); // 1
-        $(this).addClass('active'); // 2
-
-        $(this).parents('.tabs').find('.js-tab-content.active').removeClass('active'); // 3
-        content.addClass('active'); // 4
-    });
-});

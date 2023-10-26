@@ -146,9 +146,15 @@
         <div class="tabs">
           <div class="tabs__header">
             <div class="js-tab-content active" data-tab="1"><h1>Все продукты</h1></div>
-            <div class="js-tab-content" data-tab="2"><div class="h1">Microsoft Windows</div></div>
-            <div class="js-tab-content" data-tab="3"><div class="h1">Microsoft Office</div></div>
-            <div class="js-tab-content" data-tab="4"><div class="h1">Autodesk</div></div>
+            <div class="js-tab-content" data-tab="2">
+              <div class="h1">Microsoft Windows</div>
+            </div>
+            <div class="js-tab-content" data-tab="3">
+              <div class="h1">Microsoft Office</div>
+            </div>
+            <div class="js-tab-content" data-tab="4">
+              <div class="h1">Autodesk</div>
+            </div>
 
             <ul class="tabs__caption">
               <li class="js-tab-trigger active" data-tab="1">все продукты</li>
@@ -212,12 +218,16 @@
 
                           <form method="post" class="form-help">
                             <label><input type="text" placeholder="Ваш e-mail"></label>
-                            <button type="submit" class="btn btn-submit fill-none">
+                            <!--                            <button type="submit" class="btn btn-submit fill-none">-->
+                            <!--                              <svg class="svg-icon">-->
+                            <!--                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>-->
+                            <!--                              </svg>-->
+                            <!--                            </button>-->
+                            <a href="#quiz__modal" class="btn btn-submit fill-none open_modal">
                               <svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
                               </svg>
-                            </button>
-
+                            </a>
                             <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
                             </div>
                           </form>
@@ -519,12 +529,16 @@
 
                           <form method="post" class="form-help">
                             <label><input type="text" placeholder="Ваш e-mail"></label>
-                            <button type="submit" class="btn btn-submit fill-none">
+                            <!--                            <button type="submit" class="btn btn-submit fill-none">-->
+                            <!--                              <svg class="svg-icon">-->
+                            <!--                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>-->
+                            <!--                              </svg>-->
+                            <!--                            </button>-->
+                            <a href="#quiz__modal" class="btn btn-submit fill-none open_modal">
                               <svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
                               </svg>
-                            </button>
-
+                            </a>
                             <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
                             </div>
                           </form>
@@ -633,12 +647,16 @@
 
                           <form method="post" class="form-help">
                             <label><input type="text" placeholder="Ваш e-mail"></label>
-                            <button type="submit" class="btn btn-submit fill-none">
+                            <!--                            <button type="submit" class="btn btn-submit fill-none">-->
+                            <!--                              <svg class="svg-icon">-->
+                            <!--                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>-->
+                            <!--                              </svg>-->
+                            <!--                            </button>-->
+                            <a href="#quiz__modal" class="btn btn-submit fill-none open_modal">
                               <svg class="svg-icon">
                                 <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
                               </svg>
-                            </button>
-
+                            </a>
                             <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
                             </div>
                           </form>
@@ -774,9 +792,78 @@
             </div>
 
             <div class="tabs__content">
-              <div class="box-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi officiis quia
-                recusandae repellat similique sint veritatis? Accusantium consequuntur corporis, dignissimos illum iusto
-                molestiae odio optio perferendis perspiciatis quis, recusandae, velit.</p></div>
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Autodesk</div>
+                </div>
+
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 col-12-mobile p-16 mb-40">
+                      <div class="help-box">
+                        <div class="help-box__img"><img src="img/help.jpeg" alt=""></div>
+                        <div class="help-box__body">
+                          <h5>Помощь</h5>
+                          <h3>Cложности <br>с выбором ключа?</h3>
+
+                          <form method="post" class="form-help">
+                            <label><input type="text" placeholder="Ваш e-mail"></label>
+                            <!--                            <button type="submit" class="btn btn-submit fill-none">-->
+                            <!--                              <svg class="svg-icon">-->
+                            <!--                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>-->
+                            <!--                              </svg>-->
+                            <!--                            </button>-->
+
+                            <a href="#quiz__modal" class="btn btn-submit fill-none open_modal">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
+                              </svg>
+                            </a>
+
+                            <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1598,6 +1685,679 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal__div modal__div-quiz" id="quiz__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Поможем с выбором ключа</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Ваша операционная система</h3>
+        </div>
+        <div class="quiz-item__body">
+          <ul class="list-variable">
+            <li><a href="#step2__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__icon"><img src="img/variable-icon1.svg" alt=""></span>
+              <span class="list-variable-item__text">Windows</span>
+            </a></li>
+            <li><a href="#step4__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__icon"><img src="img/variable-icon2.svg" alt=""></span>
+              <span class="list-variable-item__text">MACos</span>
+            </a></li>
+            <li><a href="#step5__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__icon"><img src="img/variable-icon3.svg" alt=""></span>
+              <span class="list-variable-item__text">android или ios</span>
+            </a></li>
+            <li><a href="#step5__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">буду использовать на разных</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz" id="step2__modal">
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Поможем с выбором ключа</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Ваша операционная система</h3>
+          <a href="#" class="color-accent list-variable__value">windows</a>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>какая версия windows у вас?</h3>
+        </div>
+        <div class="quiz-item__body">
+          <ul class="list-variable">
+            <li><a href="#step3__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">Windows 10/11</span>
+            </a></li>
+            <li><a href="#result3__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">Windows 7/8</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz" id="step3__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Поможем с выбором ключа</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Ваша операционная система</h3>
+          <a href="#" class="color-accent list-variable__value">windows</a>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>какая версия windows у вас?</h3>
+          <a href="#" class="color-accent list-variable__value">10/11</a>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>вы планируете переустанавливать систему, либо менять компьютер?</h3>
+        </div>
+        <div class="quiz-item__body">
+          <ul class="list-variable">
+            <li><a href="#result1__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">Да</span>
+            </a></li>
+            <li><a href="#result2__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">нет</span>
+            </a></li>
+          </ul>
+
+          <div class="quiz-item__content">
+            <h4>У нас есть два типа ключа office:</h4>
+            <div class="box-text">
+              <p>Обычная версия это ключ на 1 использование, активация бессрочная, но при переустановке системы данный
+                ключ больше не подойдет.</p>
+              <p>Версия с привязкой это ключ который вы активируете на официальном сайте Microsoft. Office навсегда
+                закрепляется за вашей учетной записью и даже если вы смените устройство, вам будет достаточно просто
+                войти в учетную запись и продукт активируется</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz" id="step4__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Поможем с выбором ключа</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Ваша операционная система</h3>
+          <a href="#" class="color-accent list-variable__value">windows</a>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Вы предпочитаете постоянную лицензию или годовую подписку?</h3>
+        </div>
+        <div class="quiz-item__body">
+          <ul class="list-variable">
+            <li><a href="#result4__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">постоянная лицензия</span>
+            </a></li>
+            <li><a href="#step5__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">годовая подписка с облачным хранилищем</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz" id="step5__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Поможем с выбором ключа</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Ваша операционная система</h3>
+          <a href="#" class="color-accent list-variable__value">windows</a>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Вы предпочитаете постоянную лицензию или годовую подписку?</h3>
+          <a href="#" class="color-accent list-variable__value">годовая подписка с облачным хранилищем</a>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-item__head">
+          <h3>Сколько человек будут использовать приложение office</h3>
+        </div>
+        <div class="quiz-item__body">
+          <ul class="list-variable">
+            <li><a href="#result5__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">1</span>
+            </a></li>
+            <li><a href="#result6__modal" class="open_modal list-variable-item">
+              <span class="list-variable-item__text">до 6</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz modal__div-quiz-result" id="result1__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Мы рекомендуем вам</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="recommended-wrapper">
+        <div class="recommended-quiz-product">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz1.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2019 Pro с привязкой</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz2.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2021 Pro с привязкой</a>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="analogies-quiz-product">
+          <h4>Так-же подойдёт</h4>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz1.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft Office 2021 Pro Plus</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz2.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft Office 2019 Plus Plus</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/product1.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Персональный</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#quiz__modal" class="btn btn-lg btn-accent btn-again open_modal">
+        <span class="btn-again__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#repair"></use></svg></span>
+        <span>пройти заново</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz modal__div-quiz-result" id="result2__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Мы рекомендуем вам</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="recommended-wrapper">
+        <div class="recommended-quiz-product">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz3.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2019 Pro с привязкой</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz4.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2021 Pro с привязкой</a>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz4.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2021 Pro с привязкой</a>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="analogies-quiz-product">
+          <h4>Так-же подойдёт</h4>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz3.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft Office 2021 Pro Plus с привязкой</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz4.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft Office 2019 Plus Plus с привязкой</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/product1.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Персональный</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#quiz__modal" class="btn btn-lg btn-accent btn-again open_modal">
+        <span class="btn-again__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#repair"></use></svg></span>
+        <span>пройти заново</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz modal__div-quiz-result" id="result3__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Мы рекомендуем вам</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="recommended-wrapper">
+        <div class="recommended-quiz-product">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz5.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2016 Pro Plus</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="analogies-quiz-product">
+          <h4>Так-же подойдёт</h4>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz6.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft Office 2013 Pro Plus</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz7.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft Office 2010 Plus Plus</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#quiz__modal" class="btn btn-lg btn-accent btn-again open_modal">
+        <span class="btn-again__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#repair"></use></svg></span>
+        <span>пройти заново</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz modal__div-quiz-result" id="result4__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Мы рекомендуем вам</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="recommended-wrapper">
+        <div class="recommended-quiz-product">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz8.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2021 Home and Business</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz9.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft Office 2019 Home and Business</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="analogies-quiz-product">
+          <h4>Так-же подойдёт</h4>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz10.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Персональный</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz12.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Для семьи</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#quiz__modal" class="btn btn-lg btn-accent btn-again open_modal">
+        <span class="btn-again__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#repair"></use></svg></span>
+        <span>пройти заново</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz modal__div-quiz-result" id="result5__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Мы рекомендуем вам</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="recommended-wrapper">
+        <div class="recommended-quiz-product">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz10.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft 365 Персональный</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz11.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft 365 Персональный VPN</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="analogies-quiz-product">
+          <h4>Так-же подойдёт</h4>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz11.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Для семьи</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz12.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Для семьи VPN</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#quiz__modal" class="btn btn-lg btn-accent btn-again open_modal">
+        <span class="btn-again__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#repair"></use></svg></span>
+        <span>пройти заново</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div-quiz modal__div-quiz-result" id="result6__modal">
+
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal-title">Мы рекомендуем вам</div>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="recommended-wrapper">
+        <div class="recommended-quiz-product">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz12.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft 365 Для Семьи</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="img/quiz13.png" alt=""></a>
+            <div class="product-card__body">
+              <a href="product.html" class="product-card__title">Microsoft 365 Для семьи VPN</a>
+              <div class="price-wrapper">
+                <div class="price">1290 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="analogies-quiz-product">
+          <h4>Так-же подойдёт</h4>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz10.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Персональный</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <a href="product.html" class="card-list__img"><img src="img/quiz11.png" alt=""></a>
+            <div class="card-list__body">
+              <div class="card-list__item">
+                <a href="product.html" class="card-list__title">Microsoft 365 Персональный VPN</a>
+              </div>
+              <div class="price-wrapper">
+                <div class="price">1990 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#quiz__modal" class="btn btn-lg btn-accent btn-again open_modal">
+        <span class="btn-again__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#repair"></use></svg></span>
+        <span>пройти заново</span>
+      </a>
     </div>
   </div>
 </div>

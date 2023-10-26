@@ -607,3 +607,159 @@
   .modal-head
     border: none
     padding: 0 0 44px
+
+.modal__div-quiz
+  max-width: 1320px
+  right: auto
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  .modal-body
+    height: 100%
+    padding: 40px 0 0
+  .modal__wrapper
+    padding: 48px 40px 48px 48px
+    max-height: 800px
+    height: 100%
+    box-shadow: none
+    border: 1px solid #DEDEDE
+    overflow-y: auto
+    display: flex
+    flex-direction: column
+    &::-webkit-scrollbar
+      width: 8px
+      background: #DEDEDE
+    &::-webkit-scrollbar-thumb
+      background: #CD5237
+  .modal__close
+    width: 24px
+    height: 24px
+    padding: 3px
+  .modal-title
+    font-size: 36px
+    font-weight: bold
+    text-transform: none
+  .modal-head
+    flex-wrap: nowrap
+
+
+
+.quiz-item
+  width: 100%
+  border-bottom: 1px solid #DEDEDE
+  padding: 0 0 32px
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    h3
+      margin: 0 auto 0 0
+      max-width: 600px
+      font-weight: normal
+      width: fit-content
+      text-transform: uppercase
+  &__body
+    padding: 24px 0 0
+    width: 100%
+  &__content
+    margin: 24px 0 0
+    width: 100%
+    h4
+      text-transform: uppercase
+      font-size: 18px
+      font-weight: 600
+      margin: 0 0 16px
+    .box-text
+      font-size: 20px
+      line-height: 150%
+
+
+.list-variable
+  width: 100%
+  display: flex
+  align-items: stretch
+  margin: 0 -12px
+  li
+    flex: 1
+    padding: 0 12px
+  &-item
+    height: 100%
+    width: 100%
+    min-height: 116px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 22px 11px
+    text-align: center
+    text-transform: uppercase
+    background: #FAFAFA
+    font-size: 18px
+    font-weight: 600
+    color: $black
+    &:hover
+      color: $accent
+    &__icon
+      width: 40px
+      height: 40px
+      min-width: 40px
+      margin: 0 12px 0 0
+    &__text
+      max-width: 300px
+  &__value
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: 500
+    text-align: right
+    max-width: 264px
+
+.recommended-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  border-bottom: 1px solid #DEDEDE
+  padding: 0 0 32px
+  overflow-x: auto
+  margin: 0 0 32px
+
+.responsive-block
+  overflow-x: auto
+  width: 100%
+
+.recommended-quiz-product
+  display: flex
+  align-items: stretch
+  .product-card
+    width: 312px
+    margin: 0 24px 0 0
+    &__img
+      height: 312px
+
+.analogies-quiz-product
+  width: 576px
+  min-width: 576px
+  border-left: 1px solid #DEDEDE
+  padding: 0 0 0 24px
+  flex: 1
+  h4
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 18px
+    width: 100%
+    margin: 0 0 16px
+
+.btn-again
+  margin: auto auto 0
+  padding: 10px 44px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    stroke: #fff
+    fill: none
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 10px 0 0

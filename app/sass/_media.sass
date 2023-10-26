@@ -436,12 +436,51 @@
     .mb-40
       margin-bottom: 24px
 
+    h1, .h1
+      margin: 0 0 16px
+
   .sidebar-catalog
     margin: 0
 
     .sidebar-box
       display: none
 
+  .list-variable
+    flex-wrap: wrap
+
+    li
+      flex: none
+      margin: 0 0 24px
+      width: 50%
+
+  .list-variable-item
+    min-height: 90px
+
+  .quiz-item__head
+    h3
+      font-size: 18px
+
+  .modal__div-quiz
+    .modal-title
+      font-size: 24px
+      text-transform: uppercase
+    .modal-head
+      padding: 0
+      align-items: flex-start
+      border: none
+    .modal-body
+      padding: 32px 0 0
+      height: auto
+    .modal__close
+      width: 40px
+      height: 40px
+      padding: 7px
+    .modal__wrapper
+      padding: 32px 12px
+
+  .quiz-item
+    margin: 0 0 32px
+    padding: 0 0 24px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px)
@@ -942,13 +981,60 @@
 
       li
         width: fit-content
+
     .col-3
       width: 50%
 
     .col-12-mobile
       width: 100%
+
     .title-wrapper
       margin: 0 0 24px
+
+
+  .help-box__img
+    height: 230px
+
+  .recommended-wrapper
+    overflow: visible
+    flex-wrap: wrap
+
+  .recommended-quiz-product
+    //width: 100%
+    margin: 0 -12px
+    flex-wrap: wrap
+    .product-card
+      width: 50%
+      padding: 0 12px
+      margin: 0 0 32px
+
+  .analogies-quiz-product
+    padding: 0
+    border: none
+
+    width: 100%
+    min-width: auto
+    h4
+      font-weight: normal
+    .product-card__img
+      height: 250px
+
+  .btn-again
+    margin: 20px auto
+
+  .modal__div-quiz
+    .modal-title
+      font-size: 18px
+
+      max-width: 217px
+
+  .modal__div-quiz-result
+    .modal-title
+      font-weight: normal
+
+  .quiz-item__content
+    h4, .box-text
+      font-size: 14px
 
 
 
@@ -1350,6 +1436,7 @@
       &__img
         height: 190px
         width: 100%
+
       &__body
         width: 100%
 
@@ -1599,6 +1686,11 @@
 
   .catalog-page .btn-add-toggle
     display: flex
+
+  .recommended-quiz-product .product-card__img
+    height: 136px
+
+
 
 @media only screen and (max-width: 480px)
   .list-payment
