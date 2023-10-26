@@ -110,149 +110,678 @@
   </div>
 </header>
 
-<section class="search-page news-page page">
+<section class="catalog-page page">
   <div class="container">
-    <ul class="breadcrumb">
-      <li><a href="index.html">Главная </a></li>
-      <li><span>
-Статьи и новости</span></li>
-    </ul>
 
-    <h1>
-      Статьи и новости</h1>
 
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news1.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Переход с Office 365 на 2021 с помощью обновления</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Microsoft отключила возможность продления подписки на Office 365. В данной статье мы
-            подробно описали процесс перехода на версию 2021 с помощью его обновления.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
+    <div class="wrapper">
+      <div class="sidebar sidebar-catalog">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная </a></li>
+          <li><span>Каталог</span></li>
+        </ul>
+        <div class="sidebar-box">
+          <ul class="sidebar-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle active">Microsoft windows
+                <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#dropdown-arrow"></use></svg></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="cabinet-new.html">Microsoft Windows 11</a></li>
+                <li><a class="dropdown-item" href="#">Microsoft Windows 10</a></li>
+                <li><a class="dropdown-item" href="#">Microsoft Windows 8.1</a></li>
+                <li><a class="dropdown-item" href="#">Microsoft Windows 7</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Microsoft office</a></li>
+            <li><a href="#">autodesk</a></li>
+            <li><a href="#">офисные по</a></li>
           </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
         </div>
-
-
       </div>
-    </div>
 
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news2.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Ошибка: Диск имеет стиль разделов GPT</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
+      <div class="wrapper-content">
+
+        <div class="tabs">
+          <div class="tabs__header">
+            <div class="js-tab-content active" data-tab="1"><h1>Все продукты</h1></div>
+            <div class="js-tab-content" data-tab="2"><div class="h1">Microsoft Windows</div></div>
+            <div class="js-tab-content" data-tab="3"><div class="h1">Microsoft Office</div></div>
+            <div class="js-tab-content" data-tab="4"><div class="h1">Autodesk</div></div>
+
+            <ul class="tabs__caption">
+              <li class="js-tab-trigger active" data-tab="1">все продукты</li>
+              <li class="js-tab-trigger" data-tab="2">Microsoft Windows</li>
+              <li class="js-tab-trigger" data-tab="3">Microsoft Office</li>
+              <li class="js-tab-trigger" data-tab="4">Autodesk</li>
+            </ul>
+
+          </div>
+
+          <div class="tabs__body">
+            <div class="tabs__content active">
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Windows 11</div>
+                  <a href="#" class="subcategory">Microsoft Windows</a>
+                </div>
+
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 col-12-mobile p-16 mb-40">
+                      <div class="help-box">
+                        <div class="help-box__img"><img src="img/help.jpeg" alt=""></div>
+                        <div class="help-box__body">
+                          <h5>Помощь</h5>
+                          <h3>Cложности <br>с выбором ключа?</h3>
+
+                          <form method="post" class="form-help">
+                            <label><input type="text" placeholder="Ваш e-mail"></label>
+                            <button type="submit" class="btn btn-submit fill-none">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
+                              </svg>
+                            </button>
+
+                            <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Windows 10</div>
+                </div>
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Office 2023</div>
+                  <a href="#" class="subcategory">Microsoft Office</a>
+                </div>
+
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 col-12-mobile p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-66 col-12-mobile p-16 mb-40">
+                      <div class="help-box help-box-row">
+                        <div class="help-box__img"><img src="img/help.jpeg" alt=""></div>
+                        <div class="help-box__body">
+                          <h5>Помощь</h5>
+                          <h3>Cложности <br>с выбором ключа?</h3>
+
+                          <form method="post" class="form-help">
+                            <label><input type="text" placeholder="Ваш e-mail"></label>
+                            <button type="submit" class="btn btn-submit fill-none">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
+                              </svg>
+                            </button>
+
+                            <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Office 2021</div>
+                </div>
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Офисные приложения</div>
+                  <a href="#" class="subcategory">Прочее</a>
+                </div>
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-add btn-add-toggle btn-accent fill-none">+8</a>
+            </div>
+
+            <div class="tabs__content">
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Windows 11</div>
+                  <a href="#" class="subcategory">Microsoft Windows</a>
+                </div>
+
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 col-12-mobile p-16 mb-40">
+                      <div class="help-box">
+                        <div class="help-box__img"><img src="img/help.jpeg" alt=""></div>
+                        <div class="help-box__body">
+                          <h5>Помощь</h5>
+                          <h3>Cложности <br> с выбором ключа?</h3>
+
+                          <form method="post" class="form-help">
+                            <label><input type="text" placeholder="Ваш e-mail"></label>
+                            <button type="submit" class="btn btn-submit fill-none">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
+                              </svg>
+                            </button>
+
+                            <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Windows 10</div>
+                </div>
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs__content">
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Office 2023</div>
+                  <a href="#" class="subcategory">Microsoft Office</a>
+                </div>
+
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 col-12-mobile p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-66 col-12-mobile p-16 mb-40">
+                      <div class="help-box help-box-row">
+                        <div class="help-box__img"><img src="img/help.jpeg" alt=""></div>
+                        <div class="help-box__body">
+                          <h5>Помощь</h5>
+                          <h3>Cложности <br> с выбором ключа?</h3>
+
+                          <form method="post" class="form-help">
+                            <label><input type="text" placeholder="Ваш e-mail"></label>
+                            <button type="submit" class="btn btn-submit fill-none">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#btn-arrow-right"></use>
+                              </svg>
+                            </button>
+
+                            <div class="consent">Отправляя заявку вы соглашатесь с условиями пользвательского соглашения
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Microsoft Office 2021</div>
+                </div>
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-category-wrapper">
+                <div class="title-wrapper">
+                  <div class="title-category">Офисные приложения</div>
+                  <a href="#" class="subcategory">Прочее</a>
+                </div>
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new2.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 p-16 mb-40 product-col">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                          <div class="vendor-code">ETXW-1156</div>
+                          <ul class="list-labels">
+                            <li class="list-label__item bg-orange">хит продаж</li>
+                          </ul>
+                        </div>
+                        <a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
+                        <div class="product-card__body">
+                          <a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
+                          <div class="price-wrapper">
+                            <div class="price">1990 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs__content">
+              <div class="box-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi officiis quia
+                recusandae repellat similique sint veritatis? Accusantium consequuntur corporis, dignissimos illum iusto
+                molestiae odio optio perferendis perspiciatis quis, recusandae, velit.</p></div>
+            </div>
+          </div>
         </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Если при установке Windows 7, 8 или Windows 10 на компьютер вы видите сообщение о том, что установка Windows на данный диск невозможна, так как выбранный диск имеет стиль разделов GPT, ниже вы найдете подробную информацию о том, почему так происходит и что делать, чтобы установить систему на данный диск.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
-          </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-
-
       </div>
-    </div>
 
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news1.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Переход с Office 365 на 2021 с помощью обновления</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Microsoft отключила возможность продления подписки на Office 365. В данной статье мы
-            подробно описали процесс перехода на версию 2021 с помощью его обновления.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
-          </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news2.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Ошибка: Диск имеет стиль разделов GPT</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Если при установке Windows 7, 8 или Windows 10 на компьютер вы видите сообщение о том, что установка Windows на данный диск невозможна, так как выбранный диск имеет стиль разделов GPT, ниже вы найдете подробную информацию о том, почему так происходит и что делать, чтобы установить систему на данный диск.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
-          </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-
-
-      </div>
     </div>
   </div>
 </section>
@@ -610,21 +1139,24 @@
             <a href="#" class="copy-paste__link">
               <svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#copy"></use>
-              </svg></a>
+              </svg>
+            </a>
           </div>
           <div class="copy-paste">
             <span class="copy-paste__text">M7XTQ-FN8P6-TTKYV-9D4CC-J462D</span>
             <a href="#" class="copy-paste__link">
               <svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#copy"></use>
-              </svg></a>
+              </svg>
+            </a>
           </div>
           <div class="copy-paste">
             <span class="copy-paste__text">M7XTQ-FN8P6-TTKYV-9D4CC-J462D</span>
             <a href="#" class="copy-paste__link">
               <svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#copy"></use>
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -1069,6 +1601,7 @@
     </div>
   </div>
 </div>
+
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
 

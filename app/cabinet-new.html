@@ -110,148 +110,161 @@
   </div>
 </header>
 
-<section class="search-page news-page page">
+<section class="search-page cabinet-page page">
   <div class="container">
     <ul class="breadcrumb">
       <li><a href="index.html">Главная </a></li>
-      <li><span>
-Статьи и новости</span></li>
+      <li><span>Личный кабинет</span></li>
     </ul>
 
-    <h1>
-      Статьи и новости</h1>
-
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news1.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Переход с Office 365 на 2021 с помощью обновления</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Microsoft отключила возможность продления подписки на Office 365. В данной статье мы
-            подробно описали процесс перехода на версию 2021 с помощью его обновления.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
-          </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-
-
-      </div>
+    <div class="title-wrapper mb-50">
+      <h1>Личный кабинет</h1>
+      <a href="#" class="links-accent">Выйти</a>
     </div>
 
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news2.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Ошибка: Диск имеет стиль разделов GPT</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Если при установке Windows 7, 8 или Windows 10 на компьютер вы видите сообщение о том, что установка Windows на данный диск невозможна, так как выбранный диск имеет стиль разделов GPT, ниже вы найдете подробную информацию о том, почему так происходит и что делать, чтобы установить систему на данный диск.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
+    <div class="wrapper">
+      <div class="tabs">
+        <div class="tabs__header">
+          <ul class="tabs__caption">
+            <li class="active">Личные данные</li>
+            <li>Заказы (12)</li>
           </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
         </div>
 
+        <div class="tabs__body">
+          <div class="tabs__content active">
+            <div class="wrapper">
+              <div class="sidebar">
+                <div class="subtitle-page">Личные данные</div>
+              </div>
 
-      </div>
-    </div>
+              <div class="wrapper-content">
+                <form method="post" class="form-basket form-callback form-cabinet">
+                  <label>
+                    <span class="input-title">Имя</span>
+                    <input type="text" placeholder="Ваше имя" name="name">
+                  </label>
 
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news1.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Переход с Office 365 на 2021 с помощью обновления</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
+                  <div class="form-group">
+                    <label>
+                      <span class="input-title">Телефон</span>
+                      <input type="text" placeholder="Ваш телефон" name="phone">
+                    </label>
+
+                    <label>
+                      <span class="input-title">E-mail</span>
+                      <input type="text" placeholder="Ваш e-mail" name="mail">
+                    </label>
+                  </div>
+
+                  <button class="btn btn-accent" type="submit"><span>Сохранить изменения</span></button>
+                </form>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="sidebar">
+                <div class="subtitle-page">Пароль</div>
+              </div>
+
+              <div class="wrapper-content">
+                <form method="post" class="form-basket form-callback form-cabinet">
+                  <div class="form-group">
+                    <label>
+                      <span class="input-title">Старый пароль</span>
+                      <input type="text" placeholder="·········" name="first_password">
+                      <a href="#" class="links-accent text-decoration views-password">Показать</a>
+                    </label>
+                    <label>
+                      <span class="input-title">Пароль</span>
+                      <input type="text" placeholder="·········" name="password">
+                      <a href="#" class="links-accent text-decoration views-password">Показать</a>
+                    </label>
+
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      <span class="input-title">Повторите пароль</span>
+                      <input type="text" placeholder="·········" name="double_password">
+                      <a href="#" class="links-accent text-decoration views-password">Показать</a>
+                    </label>
+                  </div>
+
+                  <button class="btn btn-accent" type="submit"><span>Сохранить изменения</span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content">
+            <div class="wrapper">
+              <div class="sidebar">
+                <div class="subtitle-page">Заказы</div>
+              </div>
+              <div class="wrapper-content">
+                <div class="order-card">
+                  <div class="order-card__head">
+                    <h3>Номер заказа</h3>
+                    <div class="box-text"><p>№488362919</p></div>
+                  </div>
+
+                  <div class="order-card__head">
+                    <h3>Статус</h3>
+                    <div class="box-text color-green"><p>Доставлен</p></div>
+                  </div>
+
+                  <div class="order-card__head">
+                    <h3>Дата заказа</h3>
+                    <div class="box-text"><p>12 окт 2021</p></div>
+                  </div>
+
+                  <div class="order-card__footer">
+                    <div class="total-sum">
+                      <p>Итого:</p>
+                      <div class="sum-val">2 190 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="order-card__footer">
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-border"><span>Отзыв</span></a>
+                      <a href="product.html" class="btn btn-accent"><span>Подробнее</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-card">
+                  <div class="order-card__head">
+                    <h3>Номер заказа</h3>
+                    <div class="box-text"><p>№488362919</p></div>
+                  </div>
+
+                  <div class="order-card__head">
+                    <h3>Статус</h3>
+                    <div class="box-text color-accent"><p>Отменен</p></div>
+                  </div>
+
+                  <div class="order-card__head">
+                    <h3>Дата заказа</h3>
+                    <div class="box-text"><p>12 окт 2021</p></div>
+                  </div>
+
+                  <div class="order-card__footer">
+                    <div class="total-sum">
+                      <p>Итого:</p>
+                      <div class="sum-val">2 190 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="order-card__footer">
+                    <div class="btn-group">
+                      <a href="product.html" class="btn btn-accent"><span>Подробнее</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Microsoft отключила возможность продления подписки на Office 365. В данной статье мы
-            подробно описали процесс перехода на версию 2021 с помощью его обновления.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
-          </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="news-card">
-      <a href="news.html" class="news-card__img"><img src="img/news2.png" alt=""></a>
-      <div class="news-card__body">
-        <div class="news-card__head">
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="news.html" class="news-card__title">Ошибка: Диск имеет стиль разделов GPT</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="news-card__content">
-          <div class="box-text"><p>Если при установке Windows 7, 8 или Windows 10 на компьютер вы видите сообщение о том, что установка Windows на данный диск невозможна, так как выбранный диск имеет стиль разделов GPT, ниже вы найдете подробную информацию о том, почему так происходит и что делать, чтобы установить систему на данный диск.</p></div>
-        </div>
-        <div class="news-card__footer">
-          <ul class="news-card__info">
-            <li><p>17 сентября 2023</p></li>
-            <li><p>27766 ПРОСМОТРОВ</p></li>
-          </ul>
-
-          <a href="#" class="news-category bg-red-light">Инструкции</a>
-          <a href="#" class="link-web">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#link"></use>
-            </svg>
-          </a>
-        </div>
-
-
       </div>
     </div>
   </div>
@@ -1069,6 +1082,7 @@
     </div>
   </div>
 </div>
+
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
 

@@ -284,13 +284,52 @@ $(window).scroll(function () {
 });
 
 // copy text click btn
-$(document).ready(function() {
-    $('.copy-paste__link').click(function(e) {
+$('.copy-paste__link').click(function (e) {
+    e.preventDefault();
+    let $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(this).parent('.copy-paste').find('.copy-paste__text').text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    // $(this)(.text('Тест скопирован!');
+});
+
+
+
+// dropdown menu
+
+$(function () {
+    $('.dropdown-toggle').click(function (e) {
         e.preventDefault();
-        $(this).parent('.copy-paste').find('.copy-paste__text').text();
-        // var input = $('<textarea>').val(text).appendTo('body').select();
-        document.execCommand('copy');
-        // input.remove();
-        // alert("Текст успешно скопирован в буфер обмена!");
+
+        let pd = $(this).parents('.dropdown');
+        $('.dropdown').not(pd).find('.dropdown-toggle').removeClass('active').next('.dropdown-menu').slideUp(200);
+        $(this).toggleClass('active').next('.dropdown-menu').slideToggle();
+    });
+
+    if($('.sidebar-menu .dropdown-toggle').hasClass('active')) {
+        $('.sidebar-menu .dropdown-toggle.active').next('.dropdown-menu').slideDown();
+    }
+
+    $(document).click(function (e) {
+        var target = e.target;
+        if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+            $('.dropdown-menu').slideUp();
+            $('.dropdown-toggle').removeClass('active');
+        }
+    });
+});
+
+$(document).ready(function () {
+    $(".js-tab-trigger").click(function () {
+        var id = $(this).attr('data-tab'),
+            content = $(this).parents('.tabs').find('.js-tab-content[data-tab="' + id + '"]');
+
+        $(this).parents('.tabs').find('.js-tab-trigger.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+        $(this).parents('.tabs').find('.js-tab-content.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
     });
 });
